@@ -4,16 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="common/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="main.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="header">
-            <img src="images/logo.svg">
-            <
+        <div class="header_logo">
+            <img src="common/images/logo.svg">
+            <p>CleanLife</p>
+        </div>
+        <div class = "header_menu">
+            <div class = "header_menu__links">
+                <a href="index.html" class="menu_links__link menu_links__firstLink menu_links__currenPage">Главная</a>
+                <a href="diet.html" class="menu_links__link">Диеты</a>
+                <a href="meals.html" class="menu_links__link">Рецепты</a>
+                <a href="exercise.html" class="menu_links__link">Упражнения</a>
+            </div>
+            <div class = "header_callBack">
+                <a href="#">
+                    <button class="header_callBack__button">Обратная связь</button>
+                </a>
+            </div>
         </div>
     </header>
+    <main>
+        <div class="slide">
+            <img src="common/images/slide.jpg" alt="">
+            <div class="slide_text">
+                <p class="slide_text__title">Ты то, что ты ешь</p>
+                <p class="slide_text__invite">Записывайся на бесплатную консультацию</p>
+                <button class="slide_text__consultation">Консультация</button>
+            </div>
+        </div>
+        <div class = "citates">
+            <div class="citatesHippocrate">
+                <img src="common/images/hippocrates.png" alt="">
+                <div class="citates_textHipoccrate">
+                    <p>Как говорил Гиппократ</p>
+                    <p>"Пусть пища станет вашим лекарством, а лекарство - вашей пищей" </p>
+                </div>
+            </div>
+            <div class="citatesSokrat">
+                <div class="citates_textSokrat">
+                    <p>Как говорил Гиппократ</p>
+                    <p>"Пусть пища станет вашим лекарством, а лекарство - вашей пищей" </p>
+                </div>
+                <img src="common/images/hippocrates.png" alt="">
+            </div>
+        </div>
+        <p class="title">Поэтому мы подготовили для вас всё, что связано с правильным питанием!</p>
+        <div class="diet">
+            <p class="titleDiet">Проверенные диеты</p>
+            <div>
+                <div class="dietFirst">
+                    <img src="common/images/diet1.png" alt="">
+                    <div class="dietFirst_text">
+                        <p class="dietFirst_text__name">Диета Дюкана</p>
+                        <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
+                        <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
+                        <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
+                        <button class="buttonsLeft">Перейти</button>
+                    </div>
+                </div>
+                <div class="dietSecond">
+                    <div class="dietSecond_text">
+                        <p class="dietSecond_text__name">Японская диета</p>
+                        <p><span class="dietSecond__anotherInfo">Срок:</span> 7 или 14 дней</p>
+                        <p><span class="dietSecond__anotherInfo">Результат:</span> -3-9 кг</p>
+                        <p><span class="dietSecond__anotherInfo">Детали:</span>Японская диета - это низкокалорийная диета, которая обещает быстрые результаты. Она основана на потреблении низкокалорийных продуктов, таких как рис, рыба, овощи и фрукты, и исключает многие высококалорийные продукты. Эта диета может помочь снизить вес, но она может быть слишком строгой и нежизнеспособной в долгосрочной перспективе, и многие эксперты советуют применять ее осторожно.</p>
+                        <button class="buttonsRight">Перейти</button>
+                    </div>
+                    <img src="common/images/diet2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="meals">
+            <p class="titleMeals">Разнообразие рецептов</p>
+            <div>
+                <div class="mealsFirst">
+                    <img src="common/images/meal1.png" alt="">
+                    <div class="mealsFirst_text">
+                        <p class="mealsFirst_text__name">Салат "Цезарь" по принципам ПП</p>
+                        <p>Этот здоровый вариант классического салата Цезарь использует листья романо, куриную грудку гриль, смешанные овощи и нежный домашний соус на основе йогурта и горчицы. Это блюдо богато белками и витаминами, при этом оно низкокалорийное и вкусное.</p>
+                        <button class="buttonsLeft">Перейти</button>
+                    </div>
+                </div>
+                <div class="mealsSecond">
+                    <div class="mealsSecond_text">
+                        <p class="mealsSecond_text__name">Тушеные овощи с киноа</p>
+                        <p>Это сбалансированное блюдо, идеальное для питания по принципам правильного питания. Смешайте цветные болгарские перцы, цветную капусту, брокколи и морковь, а затем тушите их с добавлением киноа и нежными специями. Получится ароматное, белковое блюдо, богатое витаминами и минералами.</p>
+                        <button class="buttonsRight">Перейти</button>
+                    </div>
+                    <img src="common/images/meal2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="exercise">
+            <p class="titleExercise">Упражнения</p>
+            <div class="exercises">
+                <div class="exercises_exercise">
+                    <img src="common/images/exercise1.png" alt="">
+                    <p class = "exercises_exercise__nameOfExercise">Бег</p>
+                    <p class = "exercises_exercise__text">
+                        <span class="exercise_text__anotherInfo">Польза:</span> Бег является отличной аэробной физической активностью, которая улучшает выносливость, способствует сжиганию калорий и поддержанию здоровья сердца и сосудов.<br>
+                        <span class="exercise_text__anotherInfo">Техника:</span> Старайтесь бегать на ровной поверхности и подбирать удобную обувь. Начните с медленного темпа и постепенно увеличивайте его. Соблюдайте правильную постуру и дыхание.
+                    </p>
+                </div>
+                <div class="exercises_exercise">
+                    <img src="common/images/exercise2.png" alt="">
+                    <p class = "exercises_exercise__nameOfExercise">Приседания</p>
+                    <p class = "exercises_exercise__text">
+                        <span class="exercise_text__anotherInfo">Польза:</span> Приседания отлично развивают мышцы ног и ягодиц, укрепляют корпус тела и улучшают стабильность.<br>
+                        <span class="exercise_text__anotherInfo">Техника:</span> Станьте прямо, ноги на ширине плеч, руки перед грудью. Медленно садитесь, как будто садитесь на стул, сохраняя спину прямой. Затем поднимайтесь обратно в исходное положение.
+                    </p>
+                    <button class="buttonsLeft">Перейти</button>
+                </div>
+                <div class="exercises_exercise">
+                    <img src="common/images/exercise3.png" alt="">
+                    <p class = "exercises_exercise__nameOfExercise">Отжимания</p>
+                    <p class = "exercises_exercise__text">
+                        <span class="exercise_text__anotherInfo">Польза:</span> Отжимания развивают мышцы груди, плеч, и трицепс. Они также улучшают силу верхней части тела.<br>
+                        <span class="exercise_text__anotherInfo">Техника:</span> Лягте на живот, положите руки рядом с плечами. Отталкивайтесь от пола, поднимая верхнюю часть тела, сохраняя тело прямым. Вернитесь в исходное положение. Если это слишком сложно, вы можете начать с колен и постепенно переходить к полному отжиманию.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer_socialMedias">
+                <p>Ищите нас в социальных сетях</p>
+                <div class="footer_socialMedias__footer_socialMedia">
+                    <a href=""><img src="common/images/vk.png" alt=""></a>
+                    <a href=""><img src="common/images/telega.png" alt=""></a>
+                    <a href=""><img src="common/images/insta.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer_contacts">
+                <p>Связь с нами</p>
+                <div class="contacts">
+                    <div class="contacts_mail">
+                        <img src="common/images/mail.png" alt="">
+                        <p>example@mail.ru</p>
+                    </div>
+                    <div class="contacts_phone">
+                        <img src="common/images/telephone.png" alt="">
+                        <p>+79996677897</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

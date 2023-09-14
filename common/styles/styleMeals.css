@@ -1,0 +1,67 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px 0 200px;
+}
+.header_logo{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+}
+.header_logo p {
+    font-size: 16px;
+    color: #0C9EAC;
+    display: flex;
+    align-items: flex-end;
+    margin-left: -30px;
+}
+header img{
+    width: 70px;
+}
+.header_menu{
+    display: flex;
+    justify-content: space-between;
+}
+.header_menu__links{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+.menu_links__link{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.menu_links__firstLink{
+    margin: 0;
+}
+.menu_links__currenPage{
+    color: #0C9EAC;
+}
+.menu_links__link:hover{
+    color: #0C9EAC;
+    transition: 0.1s
+}
+.header_callBack{
+    display: flex;
+    width: 150px;
+    align-items: center;
+}
+.header_callBack a{
+    text-decoration: none;
+}
+.header_callBack__button{
+    background-color: #0C9EAC;
+    padding: 7px 15px  ;
+    border-radius: 15px;
+}
+.header_callBack__button p{
+    margin: 0;
+    color: white;
+}
