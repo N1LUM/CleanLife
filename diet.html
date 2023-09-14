@@ -8,29 +8,142 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="main.js"></script>
-    <title>Document</title>
+    <link rel="icon" href="common/images/logo.svg" type="image/x-icon">
+    <title>CleanLife</title>
 </head>
 <body>
-    <header>
-        <div class="header_logo">
-            <img src="common/images/logo.svg">
-            <p>CleanLife</p>
+<header>
+    <div class="header_logo">
+        <a href="index.html"><img src="common/images/logo.svg"></a>
+        <p>CleanLife</p>
+    </div>
+    <div class = "header_menu">
+        <div class = "header_menu__links">
+            <a href="index.html" class="menu_links__link menu_links__firstLink">Главная</a>
+            <a href="diet.html" class="menu_links__link menu_links__currenPage">Диеты</a>
+            <a href="meals.html" class="menu_links__link">Рецепты</a>
+            <a href="exercise.html" class="menu_links__link">Упражнения</a>
         </div>
-        <div class = "header_menu">
-            <div class = "header_menu__links">
-                <a href="index.html" class="menu_links__link menu_links__firstLink">Главная</a>
-                <a href="diet.html" class="menu_links__link menu_links__currenPage">Диеты</a>
-                <a href="meals.html" class="menu_links__link">Рецепты</a>
-                <a href="exercise.html" class="menu_links__link">Упражнения</a>
+        <div class = "header_callBack">
+            <a href="#">
+                <button class="header_callBack__button">Обратная связь</button>
+            </a>
+        </div>
+    </div>
+    <div class="menu-icon">
+        <div class="open" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+<div class="burgerMenu">
+    <div class="links">
+        <div class="close" onclick="closeMenu()">
+            <div class="crossbarLeft"></div>
+            <div class="crossbarRight"></div>
+        </div>
+        <a href="index.html">Главная</a>
+        <a href="diet.html">Диеты</a>
+        <a href="meals.html">Рецепты</a>
+        <a href="exercise.html">Упражнения</a>
+    </div>
+</div>
+<main>
+    <div class="slide">
+        <img src="common/images/slideDiet.png" alt="">
+        <div class="slide_text">
+            <p class="slide_text__title">Еда, как деньги, должна работать на вас</p>
+            <p class="slide_text__invite">Записывайся на бесплатную консультацию</p>
+            <button class="slide_text__consultation">Консультация</button>
+        </div>
+    </div>
+    <div class="diet">
+        <p class="titleDiet">Диеты</p>
+        <div>
+            <div class="dietFirst">
+                <button class="buttons_invis">Перейти</button>
+                <img src="common/images/diet1.png" alt="">
+                <div class="dietFirst_text">
+                    <p class="dietFirst_text__name">Диета Дюкана</p>
+                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
+                    <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
+                    <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
+                    <button class="buttonsLeft">Перейти</button>
+                </div>
             </div>
-            <div class = "header_callBack">
-                <a href="#">
-                    <div class="header_callBack__button">
-                        <p>Обратная связь</p>
-                    </div>
-                </a>
+            <div class="dietFirst">
+                <button class="buttons_invis">Перейти</button>
+                <img src="common/images/diet1.png" alt="">
+                <div class="dietFirst_text">
+                    <p class="dietFirst_text__name">Диета Дюкана</p>
+                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
+                    <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
+                    <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
+                    <button class="buttonsLeft">Перейти</button>
+                </div>
+            </div>
+            <div class="dietFirst">
+                <button class="buttons_invis">Перейти</button>
+                <img src="common/images/diet1.png" alt="">
+                <div class="dietFirst_text">
+                    <p class="dietFirst_text__name">Диета Дюкана</p>
+                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
+                    <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
+                    <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
+                    <button class="buttonsLeft">Перейти</button>
+                </div>
+            </div>
+            <div class="dietFirst">
+                <button class="buttons_invis">Перейти</button>
+                <img src="common/images/diet1.png" alt="">
+                <div class="dietFirst_text">
+                    <p class="dietFirst_text__name">Диета Дюкана</p>
+                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
+                    <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
+                    <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
+                    <button class="buttonsLeft">Перейти</button>
+                </div>
+            </div>
+            <div class="dietFirst">
+                <button class="buttons_invis">Перейти</button>
+                <img src="common/images/diet1.png" alt="">
+                <div class="dietFirst_text">
+                    <p class="dietFirst_text__name">Диета Дюкана</p>
+                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
+                    <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
+                    <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
+                    <button class="buttonsLeft">Перейти</button>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer_socialMedias">
+            <p>Ищите нас в социальных сетях</p>
+            <div class="footer_socialMedias__footer_socialMedia">
+                <a href=""><img src="common/images/vk.png" alt=""></a>
+                <a href=""><img src="common/images/telega.png" alt=""></a>
+                <a href=""><img src="common/images/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer_contacts">
+            <p>Связь с нами</p>
+            <div class="contacts">
+                <div class="contacts_mail">
+                    <img src="common/images/mail.png" alt="">
+                    <p>example@mail.ru</p>
+                </div>
+                <div class="contacts_phone">
+                    <img src="common/images/telephone.png" alt="">
+                    <p>+79996677897</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

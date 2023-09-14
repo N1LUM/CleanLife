@@ -8,12 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="main.js"></script>
-    <title>Document</title>
+    <link rel="icon" href="common/images/logo.svg" type="image/x-icon">
+    <title>CleanLife</title>
 </head>
 <body>
     <header>
         <div class="header_logo">
-            <img src="common/images/logo.svg">
+            <a href="index.html"><img src="common/images/logo.svg"></a>
             <p>CleanLife</p>
         </div>
         <div class = "header_menu">
@@ -29,7 +30,26 @@
                 </a>
             </div>
         </div>
+        <div class="menu-icon">
+            <div class="open" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
     </header>
+    <div class="burgerMenu">
+        <div class="links">
+            <div class="close" onclick="closeMenu()">
+                <div class="crossbarLeft"></div>
+                <div class="crossbarRight"></div>
+            </div>
+            <a href="index.html">Главная</a>
+            <a href="diet.html">Диеты</a>
+            <a href="meals.html">Рецепты</a>
+            <a href="exercise.html">Упражнения</a>
+        </div>
+    </div>
     <main>
         <div class="slide">
             <img src="common/images/slide.jpg" alt="">
@@ -49,24 +69,25 @@
             </div>
             <div class="citatesSokrat">
                 <div class="citates_textSokrat">
-                    <p>Как говорил Гиппократ</p>
+                    <p>И глаголил Сократ</p>
                     <p>"Пусть пища станет вашим лекарством, а лекарство - вашей пищей" </p>
                 </div>
-                <img src="common/images/hippocrates.png" alt="">
+                <img src="common/images/sokrat.png" alt="">
             </div>
         </div>
-        <p class="title">Поэтому мы подготовили для вас всё, что связано с правильным питанием!</p>
+        <p class="title">Поэтому мы подготовили для вас всё, что связано со здоровым образом жизни!</p>
         <div class="diet">
             <p class="titleDiet">Проверенные диеты</p>
             <div>
                 <div class="dietFirst">
+                    <button class="buttons_invis">Перейти</button>
                     <img src="common/images/diet1.png" alt="">
                     <div class="dietFirst_text">
                         <p class="dietFirst_text__name">Диета Дюкана</p>
                         <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
                         <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
                         <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
-                        <button class="buttonsLeft">Перейти</button>
+                        <a href="diet.html"><button class="buttonsLeft">Перейти</button></a>
                     </div>
                 </div>
                 <div class="dietSecond">
@@ -75,9 +96,10 @@
                         <p><span class="dietSecond__anotherInfo">Срок:</span> 7 или 14 дней</p>
                         <p><span class="dietSecond__anotherInfo">Результат:</span> -3-9 кг</p>
                         <p><span class="dietSecond__anotherInfo">Детали:</span>Японская диета - это низкокалорийная диета, которая обещает быстрые результаты. Она основана на потреблении низкокалорийных продуктов, таких как рис, рыба, овощи и фрукты, и исключает многие высококалорийные продукты. Эта диета может помочь снизить вес, но она может быть слишком строгой и нежизнеспособной в долгосрочной перспективе, и многие эксперты советуют применять ее осторожно.</p>
-                        <button class="buttonsRight">Перейти</button>
+                        <a href="diet.html"><button class="buttonsRight">Перейти</button></a>
                     </div>
                     <img src="common/images/diet2.png" alt="">
+                    <button class="buttons_invis">Перейти</button>
                 </div>
             </div>
         </div>
@@ -85,20 +107,22 @@
             <p class="titleMeals">Разнообразие рецептов</p>
             <div>
                 <div class="mealsFirst">
+                    <button class="buttons_invis">Перейти</button>
                     <img src="common/images/meal1.png" alt="">
                     <div class="mealsFirst_text">
                         <p class="mealsFirst_text__name">Салат "Цезарь" по принципам ПП</p>
                         <p>Этот здоровый вариант классического салата Цезарь использует листья романо, куриную грудку гриль, смешанные овощи и нежный домашний соус на основе йогурта и горчицы. Это блюдо богато белками и витаминами, при этом оно низкокалорийное и вкусное.</p>
-                        <button class="buttonsLeft">Перейти</button>
+                        <a href="meals.html"><button class="buttonsLeft">Перейти</button></a>
                     </div>
                 </div>
                 <div class="mealsSecond">
                     <div class="mealsSecond_text">
                         <p class="mealsSecond_text__name">Тушеные овощи с киноа</p>
                         <p>Это сбалансированное блюдо, идеальное для питания по принципам правильного питания. Смешайте цветные болгарские перцы, цветную капусту, брокколи и морковь, а затем тушите их с добавлением киноа и нежными специями. Получится ароматное, белковое блюдо, богатое витаминами и минералами.</p>
-                        <button class="buttonsRight">Перейти</button>
+                        <a href="meals.html"><button class="buttonsRight">Перейти</button></a>
                     </div>
                     <img src="common/images/meal2.png" alt="">
+                    <button class="buttons_invis">Перейти</button>
                 </div>
             </div>
         </div>
@@ -120,7 +144,7 @@
                         <span class="exercise_text__anotherInfo">Польза:</span> Приседания отлично развивают мышцы ног и ягодиц, укрепляют корпус тела и улучшают стабильность.<br>
                         <span class="exercise_text__anotherInfo">Техника:</span> Станьте прямо, ноги на ширине плеч, руки перед грудью. Медленно садитесь, как будто садитесь на стул, сохраняя спину прямой. Затем поднимайтесь обратно в исходное положение.
                     </p>
-                    <button class="buttonsLeft">Перейти</button>
+                    <a href="exercise.html"><button class="buttonsLeft">Перейти</button></a>
                 </div>
                 <div class="exercises_exercise">
                     <img src="common/images/exercise3.png" alt="">
@@ -129,6 +153,7 @@
                         <span class="exercise_text__anotherInfo">Польза:</span> Отжимания развивают мышцы груди, плеч, и трицепс. Они также улучшают силу верхней части тела.<br>
                         <span class="exercise_text__anotherInfo">Техника:</span> Лягте на живот, положите руки рядом с плечами. Отталкивайтесь от пола, поднимая верхнюю часть тела, сохраняя тело прямым. Вернитесь в исходное положение. Если это слишком сложно, вы можете начать с колен и постепенно переходить к полному отжиманию.
                     </p>
+                    <button class="buttons_invis">Перейти</button>
                 </div>
             </div>
         </div>

@@ -2,10 +2,9 @@ body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
 }
 header{
-    margin: 0 180px 0 190px;
+    margin: 0 190px 0 190px;
     display: flex;
     justify-content: space-between;
 }
@@ -14,6 +13,7 @@ header{
     height: 80px;
     background-color: white;
     display: flex;
+    text-decoration: none;
 }
 .header_logo p {
     font-size: 16px;
@@ -21,6 +21,7 @@ header{
     display: flex;
     align-items: flex-end;
     margin-left: -30px;
+    cursor: pointer;
 }
 header img{
     width: 70px;
@@ -28,7 +29,7 @@ header img{
 .header_menu{
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 600px;
 }
 .header_menu__links{
     display: flex;
@@ -65,8 +66,71 @@ header img{
     margin: 0;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
+}
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    background-color: #0C9EAC;
+    margin: 3px 0;
+    border-radius: 3px;
+}
+.close{
+    display: none;
+    transition: 0.5s;
+    position: relative;
+    left: 80%;
+    margin-bottom: 100px;
+}
+.crossbarLeft{
+    background-color: white;
+    width: 15px;
+    height: 3px;
+    rotate: 225deg;
+    position: absolute;
+}
+.crossbarRight{
+    background-color: white;
+    width: 15px;
+    height: 3px;
+    rotate: 315deg;
+    position: absolute;
+}
+.burgerMenu{
+    display: block;
+    position: fixed;
+    top: -30px;
+    left: -100%;
+    background-color: #0C9EAC;
+    width: 180px;
+    height: 110vh;
+    z-index: 999;
+    transition: 0.5s;
+}
+.links{
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+}
+.links a:hover{
+    color: #8EB12E;
 }
 main{
     margin: 0 200px 0 200px;
@@ -74,7 +138,9 @@ main{
 .slide{
     width: calc(100vw - 400px);
     height: 500px;
-
+    background-color: black;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
 }
 .slide img{
     border-top-left-radius: 10px ;
@@ -83,6 +149,7 @@ main{
     height: 500px;
     object-fit: cover;
     object-position: center top;
+    opacity: 0.8;
 }
 .slide_text{
     position: relative;
@@ -97,7 +164,7 @@ main{
 .slide_text__invite{
     color: white;
     font-size: 20px;
-    margin: 0 0 25px 0;
+    margin: 0 0 15px 0;
 }
 .slide_text__consultation{
     text-decoration: none;
@@ -110,8 +177,8 @@ main{
 }
 .citates{
     display: flex;
-    justify-content: space-between;
-    height: 200px;
+    justify-content: space-around;
+    height: 250px;
 }
 .citates > .citatesHippocrate {
     align-items: flex-start; /* Выравнивание в верхней части */
@@ -141,14 +208,17 @@ main{
 .citatesSokrat img{
     width: 70px;
 }
-.citates_textHipoccrate{
-    font-size: 18px;
-    margin: 10px 0 0 20px ;
-}
 .citates_textSokrat{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     font-size: 18px;
-    margin: 10px 0 0 20px ;
+    margin: 10px 10px 0 20px ;
     text-align: right;
+    align-items: flex-end;
+}
+.citates_textSokrat p:first-child {
+    margin-bottom: 0;
 }
 .citates_textSokrat p:not(:first-child) {
     color: #8EB12E;
@@ -190,7 +260,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
 }
 .dietSecond_text p{
     text-align: right;
@@ -280,7 +349,7 @@ main{
 .footer{
     background: #BBFF00;
     margin: 0;
-    padding: 15px 400px 15px 400px;
+    padding: 15px 300px 15px 300px;
     display: flex;
     justify-content: space-between;
 }
@@ -297,7 +366,7 @@ main{
 .footer_contacts{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 .footer_contacts p{
 }
@@ -340,4 +409,423 @@ main{
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+.buttons_invis{
+    background-color: #0C9EAC;
+    padding: 7px 15px  ;
+    border-radius: 10px;
+    margin: 0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 1440px) {
+    header{
+        margin: 0 50px 0 50px;
+    }
+    main{
+        margin: 0 50px 0 50px;
+    }
+    .slide img{
+        width: calc(100vw - 100px);
+        height: 500px;
+    }
+    .slide{
+        width: calc(100vw - 100px);
+    }
+    .slide_text{
+        position: relative;
+        bottom: 250px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .slide_text__title{
+        font-size: 40px;
+    }
+    .slide_text__invite{
+        font-size: 15px;
+    }
+    .slide_text__consultation{
+        font-size: 20px;
+    }
+    .citates{
+        height: 250px;
+    }
+    .citates_textHipoccrate{
+        font-size: 16px;
+    }
+    .citates_textSokrat{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .titleDiet{
+        font-size: 18px;
+    }
+    .diet img {
+        width: 370px;
+        height: 250px;
+        margin-top: 15px;
+    }
+    .diet p {
+        margin: 5px 0 ;
+    }
+    .dietFirst_text{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .dietFirst_text__name{
+        font-size: 16px;
+    }
+    .buttonsLeft {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    .dietSecond_text{
+        margin-top: 20px;
+    }
+    .dietSecond_text p{
+        font-size: 16px;
+    }
+    .dietSecond_text__name{
+        font-size: 16px;
+    }
+    .buttonsRight {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    .titleMeals{
+        font-size: 18px;
+    }
+    .meals img {
+        width: 370px;
+        height: 250px;
+        margin-top: 15px;
+    }
+    .mealsFirst_text__name{
+        font-size: 16px;
+    }
+    .mealsFirst_text{
+        font-size: 16px;
+    }
+    .mealsSecond_text__name{
+        font-size: 16px;
+    }
+    .mealsSecond_text{
+        font-size: 16px;
+    }
+    .titleExercise{
+        font-size: 18px;
+    }
+    .exercise img{
+        width: 300px;
+        height: 250px;
+    }
+    .exercises_exercise__nameOfExercise{
+        font-size: 16px;
+    }
+    .exercises_exercise__text{
+        font-size: 16px;
+    }
+    .footer{
+        background: #BBFF00;
+        margin: 30px 0 0 0;
+        padding: 15px 150px 15px 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_socialMedias{
+        font-size: 14px;
+    }
+    .footer_contacts{
+        font-size: 14px;
+    }
+    .contacts{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header_menu{
+        width: 500px;
+        font-size: 14px;
+    }
+    .header_menu__links {
+        margin-right: 20px;
+    }
+    .header_callBack__button{
+        font-size: 12px;
+        width: 150px;
+    }
+    .slide{
+        width: calc(100vw - 100px);
+        height: 300px;
+    }
+    .slide img{
+        width: calc(100vw - 100px);
+        height: 300px;
+    }
+    .slide_text{
+        bottom: 170px;
+        width: calc(100vw - 100px);
+    }
+    .citates {
+        flex-direction: column;
+        height: 300px;
+    }
+    .citatesSokrat {
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .diet img {
+        width: 400px;
+        height: 250px;
+    }
+    .dietFirst {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .dietFirst_text {
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    .dietSecond {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dietSecond_text{
+        margin-top: 20px;
+        margin-right: 0;
+        align-items: center;
+        font-size: 16px;
+    }
+    .dietSecond_text p{
+        text-align: center;
+    }
+    .buttonsRight{
+        display: none;
+    }
+    .buttonsLeft{
+        display: none;
+    }
+    .buttons_invis{
+        margin-top: 10px;
+        display: flex;
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    .mealsFirst{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .meals img {
+        width: 400px;
+        height: 250px;
+    }
+    .mealsFirst_text {
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    .mealsSecond {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mealsSecond_text{
+        margin-top: 20px;
+        margin-right: 0;
+        align-items: center;
+        font-size: 16px;
+    }
+    .mealsSecond_text p{
+        text-align: center;
+    }
+    .exercises{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .exercises p {
+        text-align: center;
+    }
+    .exercises button {
+        justify-content: center;
+    }
+    .footer{
+        padding: 15px 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        margin: 0 20px;
+        align-items: center;
+    }
+    .header_menu {
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    main{
+        margin: 0 20px;
+    }
+    .slide{
+        width: calc(100vw - 40px);
+        height: 200px;
+        border-radius: 0;
+    }
+    .slide img{
+        width: calc(100vw - 40px);
+        height: 200px;
+        border-radius: 0;
+    }
+    .slide_text{
+        bottom: 140px;
+        width: calc(100vw - 40px);
+    }
+    .slide_text__title{
+        font-size: 30px;
+    }
+    .slide_text__invite{
+        font-size: 12px;
+    }
+    .slide_text__consultation{
+        font-size: 15px;
+    }
+    .citatesHippocrate{
+        margin-top: 20px;
+    }
+    .footer{
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_socialMedias__footer_socialMedia{
+        justify-content: space-around;
+    }
+    .footer_contacts p{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 640px) {
+    header{
+        padding: 20px;
+        margin: 0;
+    }
+    .header_logo{
+        height: 40px;
+        align-items: center;
+    }
+    .header_logo img{
+        height: 60px;
+    }
+    .header_logo p {
+        margin-bottom: 0;
+    }
+    main{
+        margin: 0;
+    }
+    .slide{
+        width: 100vw;
+        height: 250px;
+    }
+    .slide img {
+        width: 100vw;
+        height: 250px;
+    }
+    .slide_text{
+        width: 100vw;
+    }
+    .slide_text__title {
+        font-size: 25px;
+    }
+    .slide_text__invite {
+        font-size: 14px;
+    }
+    .slide_text__consultation {
+        font-size: 13px;
+    }
+    .citatesHippocrate{
+        margin-top: 5px;
+    }
+    .citates_textHipoccrate {
+        font-size: 14px;
+        margin: 0 0 0 10px;
+    }
+    .citates_textSokrat {
+        font-size: 14px;
+        margin:0 ;
+    }
+    .citates_textSokrat:first-child {
+        margin-bottom: 5px ;
+    }
+    .citates{
+        height: 320px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .diet img{
+        width: 300px;
+        height: 200px;
+    }
+    .titleDiet{
+        font-size: 16px;
+    }
+    .dietFirst_text__name{
+        font-size: 14px;
+    }
+    .dietFirst_text{
+        width: 320px;
+        font-size: 14px;
+    }
+    .dietSecond_text__name{
+        font-size: 14px;
+    }
+    .dietSecond_text p{
+        width: 320px;
+        font-size: 14px;
+    }
+    .titleMeals{
+        font-size: 16px;
+    }
+    .meals img{
+        width: 300px;
+        height: 200px;
+    }
+    .mealsFirst_text__name{
+        font-size: 14px;
+    }
+    .mealsFirst_text{
+        width: 300px;
+        font-size: 14px;
+    }
+    .mealstSecond_text__name{
+        font-size: 14px;
+    }
+    .mealsSecond_text{
+        width: 300px;
+        font-size: 14px;
+    }
+    .titleExercise{
+        font-size: 16px;
+    }
+    .exercise img {
+        width: 300px;
+        height: 300px;
+    }
+    .exercises_exercise__text {
+        width: 300px;
+        font-size: 14px;
+    }
+    .footer img{
+        width: 20px;
+    }
 }
