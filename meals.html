@@ -7,30 +7,158 @@
     <link rel="stylesheet" href="common/styles/styleMeals.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="main.js"></script>
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="common/images/logo.svg" type="image/x-icon">
+    <title>CleanLife</title>
 </head>
 <body>
-    <header>
-        <div class="header_logo">
-            <img src="common/images/logo.svg">
-            <p>CleanLife</p>
+<header>
+    <div class="header_logo">
+        <a href="index.html"><img src="common/images/logo.svg"></a>
+        <p>CleanLife</p>
+    </div>
+    <div class = "header_menu">
+        <div class = "header_menu__links">
+            <a href="index.html" class="menu_links__link menu_links__firstLink">Главная</a>
+            <a href="diet.html" class="menu_links__link" >Диеты</a>
+            <a href="meals.html" class="menu_links__link menu_links__currenPage">Рецепты</a>
+            <a href="exercise.html" class="menu_links__link">Упражнения</a>
         </div>
-        <div class = "header_menu">
-            <div class = "header_menu__links">
-                <a href="index.html" class="menu_links__link menu_links__firstLink">Главная</a>
-                <a href="diet.html" class="menu_links__link">Диеты</a>
-                <a href="meals.html" class="menu_links__link menu_links__currenPage">Рецепты</a>
-                <a href="exercise.html" class="menu_links__link">Упражнения</a>
+        <div class = "header_callBack">
+            <a href="#">
+                <button class="header_callBack__button" onclick="openPopup()">Обратная связь</button>
+            </a>
+        </div>
+    </div>
+    <div class="menu-icon">
+        <div class="open" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+<div class="burgerMenu">
+    <div class="links">
+        <div class="close" onclick="closeMenu()">
+            <div class="crossbarLeft"></div>
+            <div class="crossbarRight"></div>
+        </div>
+        <a href="index.html">Главная</a>
+        <a href="diet.html">Диеты</a>
+        <a href="meals.html">Рецепты</a>
+        <a href="exercise.html">Упражнения</a>
+        <a href="#" onclick="openPopup()">Обратная связь</a>
+    </div>
+</div>
+<main>
+    <div class="slide">
+        <img src="common/images/slideMeals.png" alt="">
+        <div class="slide_text">
+            <p class="slide_text__title">Здоровое питание вкусно и правильно</p>
+            <p class="slide_text__invite">Попробуй выйграть бесплатный курс</p>
+            <button class="slide_text__consultation" onclick="startGame()">Играть</button>
+        </div>
+    </div>
+    <div class="diet">
+        <p class="titleDiet">Рецепты</p>
+        <div>
+            <div class="dietFirst">
+                <a href="htmls/meal/meal1.html"><button class="buttons_invis">Перейти</button></a>
+                <img src="common/images/meal1.png" alt="">
+                <div class="dietFirst_text">
+                    <p class="dietFirst_text__name">Салат "Цезарь" по принципам ПП</p>
+                    <p>Этот здоровый вариант классического салата Цезарь использует листья романо, куриную грудку гриль, смешанные овощи и нежный домашний соус на основе йогурта и горчицы. Это блюдо богато белками и витаминами, при этом оно низкокалорийное и вкусное.</p>
+                    <a href="htmls/meal/meal1.html"><button class="buttonsLeft">Перейти</button></a>
+                </div>
             </div>
-            <div class = "header_callBack">
-                <a href="#">
-                    <div class="header_callBack__button">
-                        <p>Обратная связь</p>
-                    </div>
-                </a>
+            <div class="dietFirst">
+                <a href="htmls/meal/meal2.html"><button class="buttons_invis">Перейти</button></a>
+                <img src="common/images/meal2.png" alt="">
+                <div class="dietFirst_text">
+                    <p class="dietFirst_text__name">Тушеные овощи с киноа</p>
+                    <p>Это сбалансированное блюдо, идеальное для питания по принципам правильного питания. Смешайте цветные болгарские перцы, цветную капусту, брокколи и морковь, а затем тушите их с добавлением киноа и нежными специями. Получится ароматное, белковое блюдо, богатое витаминами и минералами.</p>
+                    <a href="htmls/meal/meal2.html"><button class="buttonsLeft">Перейти</button></a>
+                </div>
+            </div>
+            <div class="dietFirst">
+                <a href="htmls/meal/meal3.html"><button class="buttons_invis">Перейти</button></a>
+                <img src="common/images/meal3.png" alt="">
+                <div class="dietFirst_text">
+                    <p class="dietFirst_text__name">Курица с брокколи и лимоном</p>
+                    <p>Этот рецепт представляет собой сочетание нежной куриной грудки и свежего брокколи, приправленных ароматным соком лимона. Куриное филе разрезается на порции, затем обжаривается до золотистой корки в сковороде с небольшим количеством растительного масла. Затем к брокколи добавляется куринное мясо, и все вместе запекается в духовке до приготовления. Подача с лимонными дольками и свежей зеленью придает этому блюду освежающий вкус.</p>
+                    <a href="htmls/meal/meal3.html"><button class="buttonsLeft">Перейти</button></a>
+                </div>
+            </div>
+            <div class="dietFirst">
+                <a href="htmls/meal/meal4.html"><button class="buttons_invis">Перейти</button></a>
+                <img src="common/images/meal4.png" alt="">
+                <div class="dietFirst_text">
+                    <p class="dietFirst_text__name">Омлет с овощами</p>
+                    <p>Этот рецепт представляет собой идеальный выбор для завтрака или легкого обеда. Взбитые яйца смешиваются с нарезанными овощами (например, помидорами, шпинатом и грибами) и затем обжариваются на сковороде. Омлет обогащен белками и витаминами, что делает его здоровым и сытным блюдом.</p>
+                    <a href="htmls/meal/meal4.html"><button class="buttonsLeft">Перейти</button></a>
+                </div>
+            </div>
+            <div class="dietFirst">
+                <a href="htmls/meal/meal5.html"><button class="buttons_invis">Перейти</button></a>
+                <img src="common/images/meal5.png" alt="">
+                <div class="dietFirst_text">
+                    <p class="dietFirst_text__name">Салат с тунцом и зеленью</p>
+                    <p>Этот салат сочетает в себе красочные свежие зеленые листья (например, рукколу и шпинат), консервированный тунец и оливковое масло с добавлением свежего лимонного сока. Тунец придает салату богатый белок и омега-3 жирные кислоты, что делает его питательным и полезным для вашего организма.</p>
+                    <a href="htmls/meal/meal5.html"><button class="buttonsLeft">Перейти</button></a>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer_socialMedias">
+            <p>Ищите нас в социальных сетях</p>
+            <div class="footer_socialMedias__footer_socialMedia">
+                <a href=""><img src="common/images/vk.png" alt=""></a>
+                <a href=""><img src="common/images/telega.png" alt=""></a>
+                <a href=""><img src="common/images/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer_contacts">
+            <p>Связь с нами</p>
+            <div class="contacts">
+                <div class="contacts_mail">
+                    <img src="common/images/mail.png" alt="">
+                    <p>example@mail.ru</p>
+                </div>
+                <div class="contacts_phone">
+                    <img src="common/images/telephone.png" alt="">
+                    <p>+79996677897</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class = "popup">
+    <div class="popupFrame">
+        <p>Консультация</p>
+        <div class="closePopupFrame" onclick="closePopup()">
+            <div class="crossbarLeftPopup"></div>
+            <div class="crossbarRightPopup"></div>
+        </div>
+        <form id="popupForm" class="popupFrame_popupForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="email" placeholder="Телефон" name="email" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="overlay">
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+            <button onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+</div>
+<div id="current-time" class="time-container"></div>
 </body>
+<script src="main.js"></script>
 </html>

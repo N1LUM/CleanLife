@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="../../main.js"></script>
+    <link rel="icon" href="../../common/images/logo.svg" type="image/x-icon">
+    <title>CleanLife</title>
+</head>
+<body>
+<header>
+    <div class="header_logo">
+        <a href="../../index.html"><img src="../../common/images/logo.svg"></a>
+        <p>CleanLife</p>
+    </div>
+    <div class = "header_menu">
+        <div class = "header_menu__links">
+            <a href="../../index.html" class="menu_links__link menu_links__firstLink">Главная</a>
+            <a href="../../diet.html" class="menu_links__link menu_links__currenPage" >Диеты</a>
+            <a href="../../meals.html" class="menu_links__link">Рецепты</a>
+            <a href="../../exercise.html" class="menu_links__link">Упражнения</a>
+        </div>
+        <div class = "header_callBack">
+            <a href="#">
+                <button class="header_callBack__button" onclick="openPopup()">Обратная связь</button>
+            </a>
+        </div>
+    </div>
+    <div class="menu-icon">
+        <div class="open" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+<div class="burgerMenu">
+    <div class="links">
+        <div class="close" onclick="closeMenu()">
+            <div class="crossbarLeft"></div>
+            <div class="crossbarRight"></div>
+        </div>
+        <a href="../../index.html">Главная</a>
+        <a href="../../diet.html">Диеты</a>
+        <a href="../../meals.html">Рецепты</a>
+        <a href="../../exercise.html">Упражнения</a>
+        <a href="#" onclick="openPopup()">Обратная связь</a>
+    </div>
+</div>
+<main>
+    <div class="diet">
+        <p class="titleDiet">Гречневая диета</p>
+        <div>
+            <div class="dietFirst">
+                <img src="images/diet5.png" alt="">
+                <div class="dietFirst_text">
+                    <p><span class="colorBlue">Гречневая диета</span> - это метод похудения, основанный на потреблении гречки в качестве основного продукта. Эта диета пользуется популярностью благодаря своей простоте и относительной эффективности. Вот некоторая информация о гречневой диете:
+                        <br><br><span class="colorGreen">Основной продукт:</span><br> Гречка (гречневая крупа) является основным продуктом в этой диете. Гречка богата клетчаткой, белками, витаминами и минералами, при этом содержит относительно мало калорий.
+                        <br><br><span class="colorGreen">Продолжительность:</span><br> Гречневую диету можно проводить в течение разного времени, обычно от 7 до 14 дней. Она рассматривается как краткосрочная стратегия для быстрого снижения веса.
+                        <br><br><span class="colorGreen">Цель:</span><br> Основная цель гречневой диеты - снижение веса. Благодаря низкой калорийности гречки и высокому содержанию клетчатки, она может помочь контролировать аппетит и ускорить метаболизм.
+                        <br><br><span class="colorGreen">Ограничения:</span><br> Во время гречневой диеты рекомендуется сильно ограничивать потребление других продуктов. Обычно разрешается употреблять только гречку и некоторые нежирные продукты, такие как кефир или нежирное молоко.
+                        <br><br><span class="colorGreen">Потребление воды:</span><br> Важно употреблять достаточное количество воды во время гречневой диеты, чтобы избежать обезвоживания и поддержать нормальную работу почек.
+                        <br><br><span class="colorGreen">Побочные эффекты:</span><br> Эта диета может вызвать недостаток некоторых важных питательных веществ, таких как белок, жиры, витамины и минералы. Длительное соблюдение гречневой диеты может привести к недостатку питательных веществ и проблемам со здоровьем.
+                        <br><br><span class="colorGreen">Умеренное физическое упражнение:</span><br> Рекомендуется сочетать гречневую диету с умеренным физическим упражнением, чтобы усилить процесс снижения веса и поддержать общее здоровье.
+                        <br><br><span class="colorGreen">Консультация с врачом:</span><br> Перед началом гречневой диеты всегда рекомендуется проконсультироваться с врачом или диетологом, чтобы удостовериться, что она подходит именно вам и не представляет угрозу для вашего здоровья.
+                        Гречневая диета может помочь снизить вес на короткий срок, но она не является устойчивой стратегией для долгосрочного контроля над весом. Для достижения и поддержания здорового веса рекомендуется соблюдать разнообразное и сбалансированное питание, а также заниматься регулярными физическими упражнениями.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer_socialMedias">
+            <p>Ищите нас в социальных сетях</p>
+            <div class="footer_socialMedias__footer_socialMedia">
+                <a href=""><img src="../../common/images/vk.png" alt=""></a>
+                <a href=""><img src="../../common/images/telega.png" alt=""></a>
+                <a href=""><img src="../../common/images/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer_contacts">
+            <p>Связь с нами</p>
+            <div class="contacts">
+                <div class="contacts_mail">
+                    <img src="../../common/images/mail.png" alt="">
+                    <p>example@mail.ru</p>
+                </div>
+                <div class="contacts_phone">
+                    <img src="../../common/images/telephone.png" alt="">
+                    <p>+79996677897</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class = "popup">
+    <div class="popupFrame">
+        <p>Консультация</p>
+        <div class="closePopupFrame" onclick="closePopup()">
+            <div class="crossbarLeftPopup"></div>
+            <div class="crossbarRightPopup"></div>
+        </div>
+        <form id="popupForm" class="popupFrame_popupForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="email" placeholder="Телефон" name="email" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="overlay">
+    </div>
+</div>
+</body>
+</html>

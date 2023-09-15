@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="../../main.js"></script>
+    <link rel="icon" href="../../common/images/logo.svg" type="image/x-icon">
+    <title>CleanLife</title>
+</head>
+<body>
+<header>
+    <div class="header_logo">
+        <a href="../../index.html"><img src="../../common/images/logo.svg"></a>
+        <p>CleanLife</p>
+    </div>
+    <div class = "header_menu">
+        <div class = "header_menu__links">
+            <a href="../../index.html" class="menu_links__link menu_links__firstLink">Главная</a>
+            <a href="../../diet.html" class="menu_links__link" >Диеты</a>
+            <a href="../../meals.html" class="menu_links__link">Рецепты</a>
+            <a href="../../exercise.html" class="menu_links__link menu_links__currenPage">Упражнения</a>
+        </div>
+        <div class = "header_callBack">
+            <a href="#">
+                <button class="header_callBack__button" onclick="openPopup()">Обратная связь</button>
+            </a>
+        </div>
+    </div>
+    <div class="menu-icon">
+        <div class="open" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+<div class="burgerMenu">
+    <div class="links">
+        <div class="close" onclick="closeMenu()">
+            <div class="crossbarLeft"></div>
+            <div class="crossbarRight"></div>
+        </div>
+        <a href="../../index.html">Главная</a>
+        <a href="../../diet.html">Диеты</a>
+        <a href="../../meals.html">Рецепты</a>
+        <a href="../../exercise.html">Упражнения</a>
+        <a href="#" onclick="openPopup()">Обратная связь</a>
+    </div>
+</div>
+<main>
+    <div class="diet">
+        <p class="titleDiet">Бег или быстрая ходьба</p>
+        <div>
+            <div class="dietFirst">
+                <img src="images/exercise1.png" alt="">
+                <div class="dietFirst_text">
+                    <p><span class="colorBlue"></span>Бег и быстрая ходьба - это две популярные кардио-тренировки, которые способствуют улучшению физической формы и общего здоровья. Оба вида активности имеют свои преимущества и могут быть адаптированы к различным целям и физическому состоянию. Вот информация о беге и быстрой ходьбе:
+                        <br><br><span class="colorBlue">Бег:</span>
+                        <br><span class="colorGreen">Преимущества бега:</span>
+                        <br><br><span class="colorGreen">Кардио-тренировка:</span> Бег является отличным способом укрепления сердечно-сосудистой системы и улучшения её эффективности. Это помогает снижать риск сердечных заболеваний и улучшать общее здоровье.
+                        <br><br><span class="colorGreen">Сжигание калорий:</span> Бег является эффективным способом сжигания калорий и помогает в контроле веса. Значительное количество энергии расходуется во время бега.
+                        <br><br><span class="colorGreen">Укрепление мышц:</span> Бег активирует множество мышечных групп, включая ноги, ягодицы, брюшной пресс и спину. Это способствует укреплению и формированию мышц.
+                        <br><br><span class="colorGreen">Улучшение настроения:</span> Физическая активность, включая бег, стимулирует выделение эндорфинов, гормонов радости, что может помочь снять стресс и улучшить настроение.
+                        <br><br><span class="colorGreen">Техника бега:</span>
+                        Важно следить за правильной техникой бега, чтобы избежать травм и максимизировать результаты. Это включает в себя правильное положение тела, частоту шагов, дыхание и другие аспекты.
+                        <br><br><span class="colorGreen">Виды бега:</span>
+                        Существует множество видов бега, включая долгие дистанции, спринт, бег по пересеченной местности, трусцой и др. Вы можете выбрать тот вид бега, который соответствует вашим целям и предпочтениям.
+                        <br><br><span class="colorBlue">Быстрая ходьба:
+                        Преимущества быстрой ходьбы:</span>
+                        <br><span class="colorGreen">Низкая нагрузка:</span> Быстрая ходьба обеспечивает хорошую физическую активность с низкой нагрузкой на суставы и связки, что делает её подходящей для людей с разными физическими ограничениями.
+                        <br><br><span class="colorGreen">Сжигание калорий:</span> При интенсивной быстрой ходьбе можно сжигать значительное количество калорий, что способствует контролю веса.
+                        <br><br><span class="colorGreen">Укрепление нижней части тела:</span> Это упражнение активирует мышцы ног, ягодиц и брюшного пресса, способствуя их укреплению.
+                        <br><br><span class="colorGreen">Улучшение физической формы:</span> Регулярная быстрая ходьба может улучшить выносливость, силу и общую физическую форму.
+                        <br><br><span class="colorGreen">Техника быстрой ходьбы:</span>
+                        Основные принципы быстрой ходьбы включают правильное положение тела, подвижные руки и правильный шаг. Эффективная техника помогает увеличить скорость и интенсивность ходьбы.
+                        <br><br><span class="colorGreen">Интенсивность:</span>
+                        Для того чтобы получить максимальную выгоду от быстрой ходьбы, важно поддерживать высокую интенсивность, что подразумевает быстрые и энергичные движения.
+                        <br><br><span class="colorGreen">Прогрессия:</span>
+                        Если быстрая ходьба является для вас начальным этапом, вы можете постепенно увеличивать интенсивность и длительность тренировок, чтобы достичь более значимых результатов.
+                        Оба бег и быстрая ходьба могут быть частью вашей ежедневной тренировки или физической активности. Выбор между ними зависит от ваших целей, предпочтений и физической подготовки. Бег обычно более интенсивен и может быть предпочтительным для тех, кто стремится к высокой физической активности и тренировке. С другой стороны, быстрая ходьба подходит для людей всех возрастов и уровней подготовки и может быть отличным способом поддерживать здоровье и форму.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer_socialMedias">
+            <p>Ищите нас в социальных сетях</p>
+            <div class="footer_socialMedias__footer_socialMedia">
+                <a href=""><img src="../../common/images/vk.png" alt=""></a>
+                <a href=""><img src="../../common/images/telega.png" alt=""></a>
+                <a href=""><img src="../../common/images/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer_contacts">
+            <p>Связь с нами</p>
+            <div class="contacts">
+                <div class="contacts_mail">
+                    <img src="../../common/images/mail.png" alt="">
+                    <p>example@mail.ru</p>
+                </div>
+                <div class="contacts_phone">
+                    <img src="../../common/images/telephone.png" alt="">
+                    <p>+79996677897</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class = "popup">
+    <div class="popupFrame">
+        <p>Консультация</p>
+        <div class="closePopupFrame" onclick="closePopup()">
+            <div class="crossbarLeftPopup"></div>
+            <div class="crossbarRightPopup"></div>
+        </div>
+        <form id="popupForm" class="popupFrame_popupForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="email" placeholder="Телефон" name="email" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="overlay">
+    </div>
+</div>
+</body>
+</html>

@@ -40,16 +40,13 @@ header img{
     margin-left: 20px;
     text-decoration: none;
     color: black;
+    transition: 0.1s
 }
 .menu_links__firstLink{
     margin: 0;
 }
 .menu_links__currenPage{
     color: #0C9EAC;
-}
-.menu_links__link:hover{
-    color: #0C9EAC;
-    transition: 0.1s
 }
 .header_callBack{
     display: flex;
@@ -240,6 +237,9 @@ main{
 .dietFirst{
     display: flex;
 }
+.dietFirst a{
+    text-decoration: none;
+}
 .dietFirst_text{
     margin-left: 20px;
     font-size: 18px;
@@ -253,6 +253,9 @@ main{
 }
 .dietSecond{
     display: flex;
+}
+.dietSecond a {
+    text-decoration: none;
 }
 .dietSecond_text{
     margin-right: 20px;
@@ -289,6 +292,9 @@ main{
 .mealsFirst{
     display: flex;
 }
+.mealsFirst a{
+    text-decoration: none;
+}
 .mealsFirst_text{
     margin-left: 20px;
     font-size: 18px;
@@ -304,6 +310,9 @@ main{
 .mealsSecond{
     display: flex;
     justify-content: flex-end;
+}
+.mealsSecond a{
+    text-decoration: none;
 }
 .mealsSecond_text{
     margin-right: 20px;
@@ -335,6 +344,12 @@ main{
     width: 300px;
     display: flex;
     flex-direction: column;
+}
+.exercises_exercise button{
+    width: 300px;
+}
+.exercises_exercise a{
+    text-decoration: none;
 }
 .exercises_exercise__nameOfExercise{
     color: #0C9EAC;
@@ -420,6 +435,107 @@ main{
     font-size: 16px;
     cursor: pointer;
     display: none;
+}
+.popupFrame{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    z-index: 2;
+    text-align: center;
+    color: #0C9EAC;
+    font-weight: normal;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 3px #8EB12E solid;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.overlay {
+    display: none; /* Изначально скрыто */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Здесь задаем затемнение */
+    z-index: 1;
+}
+.closePopupFrame{
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    cursor: pointer;
+}
+.crossbarLeftPopup{
+    background-color: #0C9EAC;
+    width: 15px;
+    height: 3px;
+    rotate: 225deg;
+    position: absolute;
+}
+.crossbarRightPopup{
+    background-color: #0C9EAC;
+    width: 15px;
+    height: 3px;
+    rotate: 315deg;
+    position: absolute;
+}
+.popupFrame_popupForm{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.popupFrame_popupForm input{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #8EB12E;
+    height: 20px;
+    color: #0C9EAC;
+}
+.popupFrame_popupForm input:first-child{
+    margin-top: 50px;
+}
+.popupFrame_popupForm button{
+    background-color: white;
+    color: #0C9EAC;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #8EB12E;
+    height: 20px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.time-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0); /* Полупрозрачный фон */
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
 }
 @media screen and (max-width: 1440px) {
     header{

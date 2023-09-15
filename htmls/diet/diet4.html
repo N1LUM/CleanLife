@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="../../main.js"></script>
+    <link rel="icon" href="../../common/images/logo.svg" type="image/x-icon">
+    <title>CleanLife</title>
+</head>
+<body>
+<header>
+    <div class="header_logo">
+        <a href="../../index.html"><img src="../../common/images/logo.svg"></a>
+        <p>CleanLife</p>
+    </div>
+    <div class = "header_menu">
+        <div class = "header_menu__links">
+            <a href="../../index.html" class="menu_links__link menu_links__firstLink">Главная</a>
+            <a href="../../diet.html" class="menu_links__link menu_links__currenPage" >Диеты</a>
+            <a href="../../meals.html" class="menu_links__link">Рецепты</a>
+            <a href="../../exercise.html" class="menu_links__link">Упражнения</a>
+        </div>
+        <div class = "header_callBack">
+            <a href="#">
+                <button class="header_callBack__button" onclick="openPopup()">Обратная связь</button>
+            </a>
+        </div>
+    </div>
+    <div class="menu-icon">
+        <div class="open" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+<div class="burgerMenu">
+    <div class="links">
+        <div class="close" onclick="closeMenu()">
+            <div class="crossbarLeft"></div>
+            <div class="crossbarRight"></div>
+        </div>
+        <a href="../../index.html">Главная</a>
+        <a href="../../diet.html">Диеты</a>
+        <a href="../../meals.html">Рецепты</a>
+        <a href="../../exercise.html">Упражнения</a>
+        <a href="#" onclick="openPopup()">Обратная связь</a>
+    </div>
+</div>
+<main>
+    <div class="diet">
+        <p class="titleDiet">Кефирная диета</p>
+        <div>
+            <div class="dietFirst">
+                <img src="images/diet4.png" alt="">
+                <div class="dietFirst_text">
+                    <p><span class="colorBlue">Кефирная диета</span> – это вид диеты, который основан на потреблении кефира, богатого пробиотиками, как основного продукта. Пробиотики - это полезные микроорганизмы, которые могут оказывать положительное воздействие на здоровье пищеварительной системы. Кефир является ферментированным молочным продуктом, получаемым путем брожения молока с использованием специальных бактерий и дрожжей.
+                        Вот некоторая информация о кефирной диете:
+                        <br><br><span class="colorGreen">Основной продукт:</span><br> Кефир является основным продуктом этой диеты. Рекомендуется употреблять кефир низкой жирности, чтобы снизить калорийность диеты.
+                        <br><br><span class="colorGreen">Продолжительность:</span><br> Кефирную диету можно проводить в течение разного времени, от нескольких дней до нескольких недель.
+                        <br><br><span class="colorGreen">Цель:</span><br> Главная цель кефирной диеты – это снижение веса. Кефир считается низкокалорийным продуктом, богатым белками, что может помочь контролировать аппетит и ускорить метаболизм.
+                        <br><br><span class="colorGreen">Пробиотики:</span><br> Кефир содержит большое количество пробиотиков, которые могут улучшить состояние микрофлоры желудочно-кишечного тракта, способствуя лучшему усвоению пищи и общему здоровью.
+                        <br><br><span class="colorGreen">Витамины и минералы:</span><br> Кефир богат витаминами и минералами, такими как кальций, витамин D, витамин B12 и многими другими. Он способствует укреплению костей, зубов и общему укреплению организма.
+                        <br><br><span class="colorGreen">Ограничения:</span><br> По мнению некоторых экспертов, кефирная диета может быть недостаточно сбалансированной, так как она ограничивается одним продуктом. Важно следить за потреблением достаточного количества других питательных веществ, таких как овощи, фрукты, белки и злаки.
+                        <br><br><span class="colorGreen">Побочные эффекты:</span><br> Кефир может вызывать пищевую непереносимость у некоторых людей из-за его кислого вкуса. Также возможны проблемы с желудком и кишечником у людей, чувствительных к молочным продуктам.
+                        <br><br><span class="colorGreen">Контроль порций:</span><br> Для достижения желаемых результатов важно контролировать порции и не переедать кефир, чтобы избежать перекомпенсации калорий в других приемах пищи.
+                        Проконсультируйтесь с врачом: Перед началом кефирной диеты всегда рекомендуется проконсультироваться с врачом или диетологом, чтобы удостовериться, что она подходит именно вам и не представляет угрозу для вашего здоровья.
+                        <br><br><span class="colorGreen">Соблюдайте меры предосторожности:</span><br> Если у вас есть проблемы с пищевой непереносимостью, аллергией на молоко или какие-либо хронические заболевания, следует быть особенно осторожными при использовании кефирной диеты.
+                        Важно помнить, что долгосрочное соблюдение однообразной диеты, включая кефирную, может быть вредным для здоровья. Разнообразное и сбалансированное питание всегда является более предпочтительным вариантом для достижения и поддержания здорового веса и общего благополучия.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer_socialMedias">
+            <p>Ищите нас в социальных сетях</p>
+            <div class="footer_socialMedias__footer_socialMedia">
+                <a href=""><img src="../../common/images/vk.png" alt=""></a>
+                <a href=""><img src="../../common/images/telega.png" alt=""></a>
+                <a href=""><img src="../../common/images/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer_contacts">
+            <p>Связь с нами</p>
+            <div class="contacts">
+                <div class="contacts_mail">
+                    <img src="../../common/images/mail.png" alt="">
+                    <p>example@mail.ru</p>
+                </div>
+                <div class="contacts_phone">
+                    <img src="../../common/images/telephone.png" alt="">
+                    <p>+79996677897</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class = "popup">
+    <div class="popupFrame">
+        <p>Консультация</p>
+        <div class="closePopupFrame" onclick="closePopup()">
+            <div class="crossbarLeftPopup"></div>
+            <div class="crossbarRightPopup"></div>
+        </div>
+        <form id="popupForm" class="popupFrame_popupForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="email" placeholder="Телефон" name="email" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="overlay">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="../../main.js"></script>
+    <link rel="icon" href="../../common/images/logo.svg" type="image/x-icon">
+    <title>CleanLife</title>
+</head>
+<body>
+<header>
+    <div class="header_logo">
+        <a href="../../index.html"><img src="../../common/images/logo.svg"></a>
+        <p>CleanLife</p>
+    </div>
+    <div class = "header_menu">
+        <div class = "header_menu__links">
+            <a href="../../index.html" class="menu_links__link menu_links__firstLink">Главная</a>
+            <a href="../../diet.html" class="menu_links__link" >Диеты</a>
+            <a href="../../meals.html" class="menu_links__link">Рецепты</a>
+            <a href="../../exercise.html" class="menu_links__link menu_links__currenPage">Упражнения</a>
+        </div>
+        <div class = "header_callBack">
+            <a href="#">
+                <button class="header_callBack__button" onclick="openPopup()">Обратная связь</button>
+            </a>
+        </div>
+    </div>
+    <div class="menu-icon">
+        <div class="open" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+<div class="burgerMenu">
+    <div class="links">
+        <div class="close" onclick="closeMenu()">
+            <div class="crossbarLeft"></div>
+            <div class="crossbarRight"></div>
+        </div>
+        <a href="../../index.html">Главная</a>
+        <a href="../../diet.html">Диеты</a>
+        <a href="../../meals.html">Рецепты</a>
+        <a href="../../exercise.html">Упражнения</a>
+        <a href="#" onclick="openPopup()">Обратная связь</a>
+    </div>
+</div>
+<main>
+    <div class="diet">
+        <p class="titleDiet">Прыжки на скакалке</p>
+        <div>
+            <div class="dietFirst">
+                <img src="images/exercise2.png" alt="">
+                <div class="dietFirst_text">
+                    <p><span class="colorBlue">Прыжки на скакалке</span> - это отличное кардио-упражнение, которое помогает улучшить физическую форму, выносливость и сжигать калории. Это простое упражнение требует минимального оборудования и может быть выполнено практически везде. Вот информация о прыжках на скакалке:
+                        <br><br><span class="colorGreen">Преимущества прыжков на скакалке:</span>
+                        Сжигание калорий: Прыжки на скакалке - это интенсивное кардио-упражнение, которое позволяет быстро сжигать калории. Оно может помочь вам контролировать вес и снижать жировую массу.
+                        Улучшение сердечно-сосудистой выносливости: Этот вид тренировки укрепляет сердце и легкие, что помогает улучшить кровообращение и общее состояние сердечно-сосудистой системы.
+                        Укрепление мышц: Прыжки на скакалке активируют мышцы нижней части тела, включая икры, бедра и ягодицы. Они также вовлекают мышцы кора, помогая улучшить осанку и укрепить брюшной пресс.
+                        Улучшение координации и баланса: Прыжки на скакалке требуют хорошей координации и равновесия, что способствует развитию этих навыков.
+                         <br><br><span class="colorBlue">Техника выполнения:</span>
+                        Держитесь прямо с ногами вместе и руками прижатыми к бедрам.
+                        Поднимите скакалку над головой и начните прыгать, обеспечивая ровный ритм.
+                        Прыгайте на носках, поднимая колени вверх, и старайтесь поднимать ноги как можно выше.
+                        Дышите ритмично и не забывайте о нормальной амплитуде движения рук.
+                         <br><br><span class="colorGreen">Виды прыжков на скакалке: </span>
+                        Существует множество различных видов прыжков на скакалке, включая одиночные прыжки, двойные прыжки, прыжки с разворотом, скакалку с одной ногой и другие. Эти вариации могут сделать тренировку более интересной и разнообразной.
+                         <br><br><span class="colorGreen">Прогрессия:</span>
+                        Если вы новичок, начните с медленных и низких прыжков, чтобы научиться контролировать скакалку.
+                        Постепенно увеличивайте интенсивность и скорость прыжков по мере того, как ваша физическая подготовка улучшается.
+                         <br><br><span class="colorGreen">Безопасность:</span>
+                        Прыжки на скакалке могут быть нагружающими для суставов, особенно коленей. Важно убедиться, что ваша техника правильна и что вы подходите для этого вида тренировки.
+                        Если у вас есть медицинские ограничения или проблемы со здоровьем, консультируйтесь с врачом перед началом тренировок с использованием скакалки.
+                        Прыжки на скакалке - это отличное упражнение для включения в свою ежедневную тренировку или как часть высокоинтенсивной интервальной тренировки. Они могут быть адаптированы к вашим физическим целям и уровню подготовки, и предоставляют множество преимуществ для вашего здоровья и физической формы.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer_socialMedias">
+            <p>Ищите нас в социальных сетях</p>
+            <div class="footer_socialMedias__footer_socialMedia">
+                <a href=""><img src="../../common/images/vk.png" alt=""></a>
+                <a href=""><img src="../../common/images/telega.png" alt=""></a>
+                <a href=""><img src="../../common/images/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer_contacts">
+            <p>Связь с нами</p>
+            <div class="contacts">
+                <div class="contacts_mail">
+                    <img src="../../common/images/mail.png" alt="">
+                    <p>example@mail.ru</p>
+                </div>
+                <div class="contacts_phone">
+                    <img src="../../common/images/telephone.png" alt="">
+                    <p>+79996677897</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class = "popup">
+    <div class="popupFrame">
+        <p>Консультация</p>
+        <div class="closePopupFrame" onclick="closePopup()">
+            <div class="crossbarLeftPopup"></div>
+            <div class="crossbarRightPopup"></div>
+        </div>
+        <form id="popupForm" class="popupFrame_popupForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="email" placeholder="Телефон" name="email" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="overlay">
+    </div>
+</div>
+</body>
+</html>

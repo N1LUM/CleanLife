@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="../../main.js"></script>
+    <link rel="icon" href="../../common/images/logo.svg" type="image/x-icon">
+    <title>CleanLife</title>
+</head>
+<body>
+<header>
+    <div class="header_logo">
+        <a href="../../index.html"><img src="../../common/images/logo.svg"></a>
+        <p>CleanLife</p>
+    </div>
+    <div class = "header_menu">
+        <div class = "header_menu__links">
+            <a href="../../index.html" class="menu_links__link menu_links__firstLink">Главная</a>
+            <a href="../../diet.html" class="menu_links__link menu_links__currenPage" >Диеты</a>
+            <a href="../../meals.html" class="menu_links__link">Рецепты</a>
+            <a href="../../exercise.html" class="menu_links__link">Упражнения</a>
+        </div>
+        <div class = "header_callBack">
+            <a href="#">
+                <button class="header_callBack__button" onclick="openPopup()">Обратная связь</button>
+            </a>
+        </div>
+    </div>
+    <div class="menu-icon">
+        <div class="open" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+<div class="burgerMenu">
+    <div class="links">
+        <div class="close" onclick="closeMenu()">
+            <div class="crossbarLeft"></div>
+            <div class="crossbarRight"></div>
+        </div>
+        <a href="../../index.html">Главная</a>
+        <a href="../../diet.html">Диеты</a>
+        <a href="../../meals.html">Рецепты</a>
+        <a href="../../exercise.html">Упражнения</a>
+        <a href="#" onclick="openPopup()">Обратная связь</a>
+    </div>
+</div>
+<main>
+    <div class="diet">
+        <p class="titleDiet">Диета Дюкана</p>
+        <div>
+            <div class="dietFirst">
+                <img src="images/diet1.png" alt="">
+                <div class="dietFirst_text">
+                    <p><span class="colorBlue">Диета Дюкана</span>, также известная как "Диета Дюкана" или "Протеиновая диета Дюкана", разработана французским врачом Пьером Дюканом и стала популярной во многих странах. Она известна своим акцентом на потреблении белка и низком содержании углеводов. Диета Дюкана предлагает четыре фазы, каждая из которых имеет свои правила и цели. Вот подробная информация о каждой из них:<br>
+                        <br><span class="colorGreen">Фаза Атаки (Attack Phase):</span><br>
+                        Эта фаза является начальной и самой строгой.
+                        Основной упор делается на потребление белка в виде нежирных мясных продуктов, рыбы, яиц и нежирных молочных продуктов.
+                        Углеводы и жиры ограничиваются до минимума.
+                        Длительность этой фазы зависит от вашей цели по снижению веса и может быть от нескольких дней до нескольких недель.
+                        <br><br><span class="colorGreen"></span><br>
+                        В этой фазе добавляются овощи к рациону, но все еще ограничиваются углеводы и жиры.
+                        Разрешено чередовать дни, когда вы едите только белок, и дни, когда вы добавляете овощи.
+                        Длительность этой фазы также зависит от ваших целей и может продолжаться несколько месяцев.
+                        <br><br><span class="colorGreen">Фаза Крепление (Consolidation Phase):</span><br>
+                        Эта фаза призвана предотвратить возврат к потерянному весу.
+                        Постепенно вводятся больше углеводов и жиров в рацион.
+                        Разрешено употребление фруктов, сыра, хлеба и даже небольшого количества сладостей.
+                        Длительность этой фазы зависит от того, сколько вы сбросили веса: 10 дней на каждый килограмм потерянного веса.
+                        <br><br><span class="colorGreen">Фаза Стабилизация (Stabilization Phase):</span><br>
+                        Эта последняя фаза диеты и она нацелена на поддержание достигнутого результата.
+                        Вам разрешено есть почти все продукты, но с ограничением по количеству и с умеренностью.
+                        Вы должны придерживаться одной "протеиновой" дня в неделю и поднимать лестницы и ходить пешком, чтобы поддерживать активный образ жизни.
+                        Важно отметить, что диета Дюкана имеет своих сторонников и критиков. Она может помочь людям снизить вес, но также может иметь недостатки, такие как недостаток разнообразия в рационе и возможность недостатка некоторых важных питательных веществ. Перед началом этой или любой другой диеты важно проконсультироваться с врачом или диетологом, чтобы убедиться, что она подходит вам и безопасна для вашего здоровья.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer_socialMedias">
+            <p>Ищите нас в социальных сетях</p>
+            <div class="footer_socialMedias__footer_socialMedia">
+                <a href=""><img src="../../common/images/vk.png" alt=""></a>
+                <a href=""><img src="../../common/images/telega.png" alt=""></a>
+                <a href=""><img src="../../common/images/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer_contacts">
+            <p>Связь с нами</p>
+            <div class="contacts">
+                <div class="contacts_mail">
+                    <img src="../../common/images/mail.png" alt="">
+                    <p>example@mail.ru</p>
+                </div>
+                <div class="contacts_phone">
+                    <img src="../../common/images/telephone.png" alt="">
+                    <p>+79996677897</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class = "popup">
+    <div class="popupFrame">
+        <p>Консультация</p>
+        <div class="closePopupFrame" onclick="closePopup()">
+            <div class="crossbarLeftPopup"></div>
+            <div class="crossbarRightPopup"></div>
+        </div>
+        <form id="popupForm" class="popupFrame_popupForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="email" placeholder="Телефон" name="email" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="overlay">
+    </div>
+</div>
+</body>
+</html>

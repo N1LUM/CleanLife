@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="common/styles/styleDiet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="common/images/logo.svg" type="image/x-icon">
     <title>CleanLife</title>
 </head>
@@ -20,13 +20,13 @@
     <div class = "header_menu">
         <div class = "header_menu__links">
             <a href="index.html" class="menu_links__link menu_links__firstLink">Главная</a>
-            <a href="diet.html" class="menu_links__link menu_links__currenPage">Диеты</a>
+            <a href="diet.html" class="menu_links__link  menu_links__currenPage">Диеты</a>
             <a href="meals.html" class="menu_links__link">Рецепты</a>
             <a href="exercise.html" class="menu_links__link">Упражнения</a>
         </div>
         <div class = "header_callBack">
             <a href="#">
-                <button class="header_callBack__button">Обратная связь</button>
+                <button class="header_callBack__button" onclick="openPopup()">Обратная связь</button>
             </a>
         </div>
     </div>
@@ -48,6 +48,7 @@
         <a href="diet.html">Диеты</a>
         <a href="meals.html">Рецепты</a>
         <a href="exercise.html">Упражнения</a>
+        <a href="#" onclick="openPopup()">Обратная связь</a>
     </div>
 </div>
 <main>
@@ -55,66 +56,66 @@
         <img src="common/images/slideDiet.png" alt="">
         <div class="slide_text">
             <p class="slide_text__title">Еда, как деньги, должна работать на вас</p>
-            <p class="slide_text__invite">Записывайся на бесплатную консультацию</p>
-            <button class="slide_text__consultation">Консультация</button>
+            <p class="slide_text__invite">Попробуй выйграть бесплатный курс</p>
+            <button class="slide_text__consultation" onclick="startGame()">Играть</button>
         </div>
     </div>
     <div class="diet">
         <p class="titleDiet">Диеты</p>
         <div>
             <div class="dietFirst">
-                <button class="buttons_invis">Перейти</button>
+                <a href="htmls/diet/diet1.html"><button class="buttons_invis">Перейти</button></a>
                 <img src="common/images/diet1.png" alt="">
                 <div class="dietFirst_text">
                     <p class="dietFirst_text__name">Диета Дюкана</p>
                     <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
                     <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
                     <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
-                    <button class="buttonsLeft">Перейти</button>
+                    <a href="htmls/diet/diet1.html"><button class="buttonsLeft">Перейти</button></a>
                 </div>
             </div>
             <div class="dietFirst">
-                <button class="buttons_invis">Перейти</button>
-                <img src="common/images/diet1.png" alt="">
+                <a href="htmls/diet/diet2.html"><button class="buttons_invis">Перейти</button></a>
+                <img src="common/images/diet2.png" alt="">
                 <div class="dietFirst_text">
-                    <p class="dietFirst_text__name">Диета Дюкана</p>
-                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
-                    <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
-                    <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
-                    <button class="buttonsLeft">Перейти</button>
+                    <p class="dietFirst_text__name">Японская диета</p>
+                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> 7 или 14 дней</p>
+                    <p><span class="dietFirst_text__anotherInfo">Результат:</span>-3-9 кг</p>
+                    <p><span class="dietFirst_text__anotherInfo">Детали:</span>Японская диета - это низкокалорийная диета, которая обещает быстрые результаты. Она основана на потреблении низкокалорийных продуктов, таких как рис, рыба, овощи и фрукты, и исключает многие высококалорийные продукты. Эта диета может помочь снизить вес, но она может быть слишком строгой и нежизнеспособной в долгосрочной перспективе, и многие эксперты советуют применять ее осторожно.</p>
+                    <a href="htmls/diet/diet2.html"><button class="buttonsLeft">Перейти</button></a>
                 </div>
             </div>
             <div class="dietFirst">
-                <button class="buttons_invis">Перейти</button>
-                <img src="common/images/diet1.png" alt="">
+                <a href="htmls/diet/diet3.html"><button class="buttons_invis">Перейти</button></a>
+                <img src="common/images/diet3.png" alt="">
                 <div class="dietFirst_text">
-                    <p class="dietFirst_text__name">Диета Дюкана</p>
-                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
-                    <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
-                    <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
-                    <button class="buttonsLeft">Перейти</button>
+                    <p class="dietFirst_text__name">Диета Кима Протасова</p>
+                    <p><span class="dietFirst_text__anotherInfo">Срок:</span>35 дней</p>
+                    <p><span class="dietFirst_text__anotherInfo">Результат:</span>-6-12 кг</p>
+                    <p><span class="dietFirst_text__anotherInfo">Детали:</span>Диета Кима Протасова – это одна из популярных диет, которая была разработана израильскими врачом и диетологом Кимом Протасовым. Она также известна как "Израильская диета" или "Диета Протасова". Диета Кима Протасова основана на принципах низкого потребления жиров и углеводов, а также на увеличенном потреблении овощей и нежирных молочных продуктов.</p>
+                    <a href="htmls/diet/diet3.html"><button class="buttonsLeft">Перейти</button></a>
                 </div>
             </div>
             <div class="dietFirst">
-                <button class="buttons_invis">Перейти</button>
-                <img src="common/images/diet1.png" alt="">
+                <a href="htmls/diet/diet4.html"><button class="buttons_invis">Перейти</button></a>
+                <img src="common/images/diet4.png" alt="">
                 <div class="dietFirst_text">
-                    <p class="dietFirst_text__name">Диета Дюкана</p>
-                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
-                    <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
-                    <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
-                    <button class="buttonsLeft">Перейти</button>
+                    <p class="dietFirst_text__name">Кефирная диета</p>
+                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> 3 или 5 дней</p>
+                    <p><span class="dietFirst_text__anotherInfo">Результат:</span>1-2 кг</p>
+                    <p><span class="dietFirst_text__anotherInfo">Детали:</span>Кефирная диета – это метод похудения, при котором кефир, ферментированный молочный продукт, играет центральную роль в рационе. Эта диета обычно рассматривается как краткосрочное средство для быстрой потери веса.</p>
+                    <a href="htmls/diet/diet4.html"><button class="buttonsLeft">Перейти</button></a>
                 </div>
             </div>
             <div class="dietFirst">
-                <button class="buttons_invis">Перейти</button>
-                <img src="common/images/diet1.png" alt="">
+                <a href="htmls/diet/diet5.html"><button class="buttons_invis">Перейти</button></a>
+                <img src="common/images/diet5.png" alt="">
                 <div class="dietFirst_text">
-                    <p class="dietFirst_text__name">Диета Дюкана</p>
-                    <p><span class="dietFirst_text__anotherInfo">Срок:</span> от 60 дней, до 365 дней</p>
-                    <p><span class="dietFirst_text__anotherInfo">Результат:</span> от -10 кг до -40 кг</p>
-                    <p><span class="dietFirst_text__anotherInfo">Детали:</span> Диета Дюкана — это высокобелковая диета, разработанная французским врачом Пьером Дюканом. Она состоит из четырех фаз: Атаки, Круиз, Кonsolidation и Стабилизации. Диета обещает быстрые результаты и постепенное снижение веса. Однако длительное соблюдение может быть нежелательным из-за возможных проблем с здоровьем.</p>
-                    <button class="buttonsLeft">Перейти</button>
+                    <p class="dietFirst_text__name">Гречневая диета</p>
+                    <p><span class="dietFirst_text__anotherInfo">Срок:</span>14 дней</p>
+                    <p><span class="dietFirst_text__anotherInfo">Результат:</span>10 кг</p>
+                    <p><span class="dietFirst_text__anotherInfo">Детали:</span>Гречневая диета – это популярная диета, которая основана на потреблении гречки (гречневой каши) как основного продукта. Эта диета обычно рассматривается как метод быстрой потери веса и может выполняться в различных вариантах.</p>
+                    <a href="htmls/diet/diet5.html"><button class="buttonsLeft">Перейти</button></a>
                 </div>
             </div>
         </div>
@@ -145,5 +146,29 @@
         </div>
     </div>
 </footer>
+<div class = "popup">
+    <div class="popupFrame">
+        <p>Консультация</p>
+        <div class="closePopupFrame" onclick="closePopup()">
+            <div class="crossbarLeftPopup"></div>
+            <div class="crossbarRightPopup"></div>
+        </div>
+        <form id="popupForm" class="popupFrame_popupForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="email" placeholder="Телефон" name="email" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="overlay">
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+            <button onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+</div>
+<div id="current-time" class="time-container"></div>
 </body>
+<script src="main.js"></script>
 </html>

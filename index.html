@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="common/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="common/images/logo.svg" type="image/x-icon">
     <title>CleanLife</title>
 </head>
@@ -26,7 +26,7 @@
             </div>
             <div class = "header_callBack">
                 <a href="#">
-                    <button class="header_callBack__button">Обратная связь</button>
+                    <button class="header_callBack__button" onclick="openPopup()">Обратная связь</button>
                 </a>
             </div>
         </div>
@@ -48,6 +48,7 @@
             <a href="diet.html">Диеты</a>
             <a href="meals.html">Рецепты</a>
             <a href="exercise.html">Упражнения</a>
+            <a href="#" onclick="openPopup()">Обратная связь</a>
         </div>
     </div>
     <main>
@@ -55,8 +56,8 @@
             <img src="common/images/slide.jpg" alt="">
             <div class="slide_text">
                 <p class="slide_text__title">Ты то, что ты ешь</p>
-                <p class="slide_text__invite">Записывайся на бесплатную консультацию</p>
-                <button class="slide_text__consultation">Консультация</button>
+                <p class="slide_text__invite">Попробуй выйграть бесплатный курс</p>
+                <button class="slide_text__consultation" onclick="startGame()">Играть</button>
             </div>
         </div>
         <div class = "citates">
@@ -80,7 +81,7 @@
             <p class="titleDiet">Проверенные диеты</p>
             <div>
                 <div class="dietFirst">
-                    <button class="buttons_invis">Перейти</button>
+                    <a href="diet.html"><button class="buttons_invis">Перейти</button></a>
                     <img src="common/images/diet1.png" alt="">
                     <div class="dietFirst_text">
                         <p class="dietFirst_text__name">Диета Дюкана</p>
@@ -99,7 +100,7 @@
                         <a href="diet.html"><button class="buttonsRight">Перейти</button></a>
                     </div>
                     <img src="common/images/diet2.png" alt="">
-                    <button class="buttons_invis">Перейти</button>
+                    <a href="diet.html"><button class="buttons_invis">Перейти</button></a>
                 </div>
             </div>
         </div>
@@ -107,7 +108,7 @@
             <p class="titleMeals">Разнообразие рецептов</p>
             <div>
                 <div class="mealsFirst">
-                    <button class="buttons_invis">Перейти</button>
+                    <a href="meals.html"><button class="buttons_invis">Перейти</button></a>
                     <img src="common/images/meal1.png" alt="">
                     <div class="mealsFirst_text">
                         <p class="mealsFirst_text__name">Салат "Цезарь" по принципам ПП</p>
@@ -122,7 +123,7 @@
                         <a href="meals.html"><button class="buttonsRight">Перейти</button></a>
                     </div>
                     <img src="common/images/meal2.png" alt="">
-                    <button class="buttons_invis">Перейти</button>
+                    <a href="meals.html"><button class="buttons_invis">Перейти</button></a>
                 </div>
             </div>
         </div>
@@ -153,7 +154,7 @@
                         <span class="exercise_text__anotherInfo">Польза:</span> Отжимания развивают мышцы груди, плеч, и трицепс. Они также улучшают силу верхней части тела.<br>
                         <span class="exercise_text__anotherInfo">Техника:</span> Лягте на живот, положите руки рядом с плечами. Отталкивайтесь от пола, поднимая верхнюю часть тела, сохраняя тело прямым. Вернитесь в исходное положение. Если это слишком сложно, вы можете начать с колен и постепенно переходить к полному отжиманию.
                     </p>
-                    <button class="buttons_invis">Перейти</button>
+                    <a href="exercise.html"><button class="buttons_invis">Перейти</button></a>
                 </div>
             </div>
         </div>
@@ -183,5 +184,29 @@
             </div>
         </div>
     </footer>
+    <div class = "popup">
+        <div class="popupFrame">
+            <p>Консультация</p>
+            <div class="closePopupFrame" onclick="closePopup()">
+                <div class="crossbarLeftPopup"></div>
+                <div class="crossbarRightPopup"></div>
+            </div>
+            <form id="popupForm" class="popupFrame_popupForm">
+                <input type="text" placeholder="Имя" name="name" required>
+                <input type="email" placeholder="Телефон" name="email" required>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="overlay">
+        </div>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <p id="modalMessage"></p>
+                <button onclick="closeModal()">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <div id="current-time" class="time-container"></div>
 </body>
+<script src="main.js"></script>
 </html>

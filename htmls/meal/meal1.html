@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="../../main.js"></script>
+    <link rel="icon" href="../../common/images/logo.svg" type="image/x-icon">
+    <title>CleanLife</title>
+</head>
+<body>
+<header>
+    <div class="header_logo">
+        <a href="../../index.html"><img src="../../common/images/logo.svg"></a>
+        <p>CleanLife</p>
+    </div>
+    <div class = "header_menu">
+        <div class = "header_menu__links">
+            <a href="../../index.html" class="menu_links__link menu_links__firstLink">Главная</a>
+            <a href="../../diet.html" class="menu_links__link" >Диеты</a>
+            <a href="../../meals.html" class="menu_links__link menu_links__currenPage">Рецепты</a>
+            <a href="../../exercise.html" class="menu_links__link">Упражнения</a>
+        </div>
+        <div class = "header_callBack">
+            <a href="#">
+                <button class="header_callBack__button" onclick="openPopup()">Обратная связь</button>
+            </a>
+        </div>
+    </div>
+    <div class="menu-icon">
+        <div class="open" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+<div class="burgerMenu">
+    <div class="links">
+        <div class="close" onclick="closeMenu()">
+            <div class="crossbarLeft"></div>
+            <div class="crossbarRight"></div>
+        </div>
+        <a href="../../index.html">Главная</a>
+        <a href="../../diet.html">Диеты</a>
+        <a href="../../meals.html">Рецепты</a>
+        <a href="../../exercise.html">Упражнения</a>
+        <a href="#" onclick="openPopup()">Обратная связь</a>
+    </div>
+</div>
+<main>
+    <div class="diet">
+        <p class="titleDiet">Салат "Цезарь" по принципам ПП</p>
+        <div>
+            <div class="dietFirst">
+                <img src="images/meal1.png" alt="">
+                <div class="dietFirst_text">
+                    <p><span class="colorBlue">Салат Цезарь</span> - это классическое блюдо, которое обычно готовится с помощью ингредиентов, которые не всегда подходят для диеты с низким содержанием калорий (ПП - принцип здорового питания). Однако существует ряд модификаций салата Цезарь, которые могут быть более здоровыми и подходящими для диеты. Вот один из вариантов рецепта салата Цезарь по принципам здорового питания:
+                        <br><br><span class="colorBlue">Ингредиенты:</span>
+                        <br><br><span class="colorGreen">Для салата:</span><br><br>
+                        - 2 куриных грудок, обжаренных без масла (или можно использовать гриль)<br><br>
+                        - 1 большая головка салата романо или латук<br><br>
+                        - 1/2 чашки нежирного греческого йогурта<br><br>
+                        - 2 ст. ложки пармезана, тертого<br><br>
+                        - 1 ст. ложка оливкового масла (для заправки)<br><br>
+                        - 1 зубчик чеснока, измельченный<br><br>
+                        - 1 ст. ложка лимонного сока<br><br>
+                        - Соль и черный перец по вкусу
+                        <br><br><span class="colorGreen">Для гарнира:</span><br>
+                        Пшеничные гренки (возможно, полноценные или из цельнозерновой муки)
+                        Дополнительный пармезан
+                        <br><br><span class="colorGreen">Приготовление:</span><br>
+                        Приготовьте курицу: Обжарьте или приготовьте куриные грудки, посыпанные солью и черным перцем, до золотистой корки. Охладите и нарежьте на небольшие кусочки.
+                        Приготовьте заправку: В миске смешайте греческий йогурт, пармезан, оливковое масло, измельченный чеснок и лимонный сок. Подсолите и поперчите по вкусу.
+                        Подготовьте салат: Разорвите листья салата и поместите их в большой миске. Добавьте кусочки курицы.
+                        Приготовьте гренки: Если вы используете гренки, обжарьте их до золотистой корки на сухой сковороде или в духовке.
+                        Соберите салат: Полейте салат приготовленной заправкой и аккуратно перемешайте, чтобы все ингредиенты хорошо пропитались.
+                        Подавайте: Порционно разложите салат по тарелкам и посыпьте гренками и дополнительным пармезаном.
+                        Этот вариант салата Цезарь более здоровый, чем традиционный, благодаря использованию нежирного йогурта вместо майонеза и умеренному количеству масла. Он по-прежнему обладает отличным вкусом и может быть включен в рацион диеты с низким содержанием калорий при условии соблюдения умеренных порций.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer_socialMedias">
+            <p>Ищите нас в социальных сетях</p>
+            <div class="footer_socialMedias__footer_socialMedia">
+                <a href=""><img src="../../common/images/vk.png" alt=""></a>
+                <a href=""><img src="../../common/images/telega.png" alt=""></a>
+                <a href=""><img src="../../common/images/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer_contacts">
+            <p>Связь с нами</p>
+            <div class="contacts">
+                <div class="contacts_mail">
+                    <img src="../../common/images/mail.png" alt="">
+                    <p>example@mail.ru</p>
+                </div>
+                <div class="contacts_phone">
+                    <img src="../../common/images/telephone.png" alt="">
+                    <p>+79996677897</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class = "popup">
+    <div class="popupFrame">
+        <p>Консультация</p>
+        <div class="closePopupFrame" onclick="closePopup()">
+            <div class="crossbarLeftPopup"></div>
+            <div class="crossbarRightPopup"></div>
+        </div>
+        <form id="popupForm" class="popupFrame_popupForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="email" placeholder="Телефон" name="email" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="overlay">
+    </div>
+</div>
+</body>
+</html>

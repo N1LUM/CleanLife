@@ -1,18 +1,19 @@
 body{
     padding: 0;
-    margin: 0;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 header{
+    margin: 0 190px 0 190px;
     display: flex;
     justify-content: space-between;
-    margin: 0 200px 0 200px;
 }
 .header_logo{
     width: 100%;
     height: 80px;
     background-color: white;
     display: flex;
+    text-decoration: none;
 }
 .header_logo p {
     font-size: 16px;
@@ -20,6 +21,7 @@ header{
     display: flex;
     align-items: flex-end;
     margin-left: -30px;
+    cursor: pointer;
 }
 header img{
     width: 70px;
@@ -27,6 +29,7 @@ header img{
 .header_menu{
     display: flex;
     justify-content: space-between;
+    width: 600px;
 }
 .header_menu__links{
     display: flex;
@@ -37,16 +40,13 @@ header img{
     margin-left: 20px;
     text-decoration: none;
     color: black;
+    transition: 0.1s
 }
 .menu_links__firstLink{
     margin: 0;
 }
 .menu_links__currenPage{
     color: #0C9EAC;
-}
-.menu_links__link:hover{
-    color: #0C9EAC;
-    transition: 0.1s
 }
 .header_callBack{
     display: flex;
@@ -59,9 +59,589 @@ header img{
 .header_callBack__button{
     background-color: #0C9EAC;
     padding: 7px 15px  ;
-    border-radius: 15px;
-}
-.header_callBack__button p{
+    border-radius: 10px;
     margin: 0;
+    border: none;
     color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    background-color: #0C9EAC;
+    margin: 3px 0;
+    border-radius: 3px;
+}
+.close{
+    display: none;
+    transition: 0.5s;
+    position: relative;
+    left: 80%;
+    margin-bottom: 100px;
+}
+.crossbarLeft{
+    background-color: white;
+    width: 15px;
+    height: 3px;
+    rotate: 225deg;
+    position: absolute;
+}
+.crossbarRight{
+    background-color: white;
+    width: 15px;
+    height: 3px;
+    rotate: 315deg;
+    position: absolute;
+}
+.burgerMenu{
+    display: block;
+    position: fixed;
+    top: -30px;
+    left: -100%;
+    background-color: #0C9EAC;
+    width: 180px;
+    height: 110vh;
+    z-index: 999;
+    transition: 0.5s;
+}
+.links{
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+}
+.links a:hover{
+    color: #8EB12E;
+}
+main{
+    margin: 0 200px 0 200px;
+}
+.slide{
+    width: calc(100vw - 400px);
+    height: 500px;
+    background-color: black;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+.slide img{
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    width: calc(100vw - 400px);
+    height: 500px;
+    object-fit: cover;
+    object-position: center top;
+    opacity: 0.8;
+}
+.slide_text{
+    position: relative;
+    bottom: 250px;
+    text-align: center;
+}
+.slide_text__title{
+    color: white;
+    font-size: 50px;
+    margin: 0 ;
+}
+.slide_text__invite{
+    color: white;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+.slide_text__consultation{
+    text-decoration: none;
+    color: #BBFF00;
+    font-size: 20px;
+    margin: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.citates{
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+}
+.citates > .citatesHippocrate {
+    align-items: flex-start; /* Выравнивание в верхней части */
+}
+
+.citates > .citatesSokrat {
+    align-items: flex-end; /* Выравнивание в нижней части */
+}
+.citatesHippocrate{
+    margin-top: 50px;
+    display: flex;
+}
+.citatesHippocrate img{
+    width: 70px;
+}
+.citates_textHipoccrate{
+    font-size: 18px;
+    margin: 10px 0 0 20px ;
+}
+.citates_textHipoccrate p:not(:first-child) {
+    color: #0C9EAC;
+}
+.citatesSokrat{
+    margin-top: 50px;
+    display: flex;
+}
+.citatesSokrat img{
+    width: 70px;
+}
+.citates_textSokrat{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 18px;
+    margin: 10px 10px 0 20px ;
+    text-align: right;
+    align-items: flex-end;
+}
+.citates_textSokrat p:first-child {
+    margin-bottom: 0;
+}
+.citates_textSokrat p:not(:first-child) {
+    color: #8EB12E;
+}
+.title{
+    text-align: center;
+    font-size: 20px;
+}
+.diet{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.titleDiet{
+    text-align: center;
+    color: #0C9EAC;
+    font-size: 20px;
+}
+.dietFirst{
+    display: flex;
+    margin-bottom: 30px;
+}
+.dietFirst a{
+    text-decoration: none;
+}
+.dietFirst_text{
+    margin-left: 20px;
+    font-size: 18px;
+}
+.dietFirst_text__name{
+    color: #0C9EAC;
+    font-size: 18px;
+}
+.dietFirst_text__anotherInfo{
+    color: #8EB12E;
+}
+.footer{
+    background: #BBFF00;
+    margin: 0;
+    padding: 15px 300px 15px 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_socialMedias{
+    display: flex;
+    flex-direction: column;
+}
+.footer_socialMedias__footer_socialMedia{
+    display: flex;
+}
+.footer_socialMedias__footer_socialMedia a:not(:first-child){
+    margin-left: 15px;
+}
+.footer_contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_contacts p{
+}
+.contacts{
+    display: flex;
+}
+.contacts div:not(:first-child) {
+    margin-left: 20px;
+}
+.contacts_mail{
+    display: flex;
+    align-items: center;
+}
+.contacts_mail p{
+    margin-left: 10px;
+}
+.contacts_phone{
+    display: flex;
+    align-items: center;
+}
+.contacts_phone p{
+    margin-left: 10px;
+}
+.buttonsLeft{
+    background-color: #0C9EAC;
+    padding: 7px 15px  ;
+    border-radius: 10px;
+    margin: 0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buttonsRight{
+    background-color: #0C9EAC;
+    padding: 7px 15px  ;
+    border-radius: 10px;
+    margin: 0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buttons_invis{
+    background-color: #0C9EAC;
+    padding: 7px 15px  ;
+    border-radius: 10px;
+    margin: 0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+.popupFrame{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    z-index: 2;
+    text-align: center;
+    color: #0C9EAC;
+    font-weight: normal;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 3px #8EB12E solid;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.overlay {
+    display: none; /* Изначально скрыто */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Здесь задаем затемнение */
+    z-index: 1;
+}
+.closePopupFrame{
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    cursor: pointer;
+}
+.crossbarLeftPopup{
+    background-color: #0C9EAC;
+    width: 15px;
+    height: 3px;
+    rotate: 225deg;
+    position: absolute;
+}
+.crossbarRightPopup{
+    background-color: #0C9EAC;
+    width: 15px;
+    height: 3px;
+    rotate: 315deg;
+    position: absolute;
+}
+.popupFrame_popupForm{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.popupFrame_popupForm input{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #8EB12E;
+    height: 20px;
+    color: #0C9EAC;
+}
+.popupFrame_popupForm input:first-child{
+    margin-top: 50px;
+}
+.popupFrame_popupForm button{
+    background-color: white;
+    color: #0C9EAC;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #8EB12E;
+    height: 20px;
+}
+.time-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0); /* Полупрозрачный фон */
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+@media screen and (max-width: 1440px) {
+    header{
+        margin: 0 50px 0 50px;
+    }
+    main{
+        margin: 0 50px 0 50px;
+    }
+    .slide img{
+        width: calc(100vw - 100px);
+        height: 500px;
+    }
+    .slide{
+        width: calc(100vw - 100px);
+    }
+    .slide_text{
+        position: relative;
+        bottom: 250px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .slide_text__title{
+        font-size: 40px;
+    }
+    .slide_text__invite{
+        font-size: 15px;
+    }
+    .slide_text__consultation{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .titleDiet{
+        font-size: 18px;
+    }
+    .diet img {
+        width: 370px;
+        height: 250px;
+        margin-top: 15px;
+    }
+    .diet p {
+        margin: 5px 0 ;
+    }
+    .dietFirst_text{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .dietFirst_text__name{
+        font-size: 16px;
+    }
+    .buttonsLeft {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    .footer{
+        background: #BBFF00;
+        margin: 30px 0 0 0;
+        padding: 15px 150px 15px 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_socialMedias{
+        font-size: 14px;
+    }
+    .footer_contacts{
+        font-size: 14px;
+    }
+    .contacts{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header_menu{
+        width: 500px;
+        font-size: 14px;
+    }
+    .header_menu__links {
+        margin-right: 20px;
+    }
+    .header_callBack__button{
+        font-size: 12px;
+        width: 150px;
+    }
+    .slide{
+        width: calc(100vw - 100px);
+        height: 300px;
+    }
+    .slide img{
+        width: calc(100vw - 100px);
+        height: 300px;
+    }
+    .slide_text{
+        bottom: 170px;
+        width: calc(100vw - 100px);
+    }
+    .diet img {
+        width: 400px;
+        height: 250px;
+    }
+    .dietFirst {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .dietFirst_text {
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    .buttonsRight{
+        display: none;
+    }
+    .buttonsLeft{
+        display: none;
+    }
+    .buttons_invis{
+        margin-top: 10px;
+        display: flex;
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    .footer{
+        padding: 15px 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        margin: 0 20px;
+        align-items: center;
+    }
+    .header_menu {
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    main{
+        margin: 0 20px;
+    }
+    .slide{
+        width: calc(100vw - 40px);
+        height: 200px;
+        border-radius: 0;
+    }
+    .slide img{
+        width: calc(100vw - 40px);
+        height: 200px;
+        border-radius: 0;
+    }
+    .slide_text{
+        bottom: 140px;
+        width: calc(100vw - 40px);
+    }
+    .slide_text__title{
+        font-size: 30px;
+    }
+    .slide_text__invite{
+        font-size: 12px;
+    }
+    .slide_text__consultation{
+        font-size: 15px;
+    }
+    .footer{
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_socialMedias__footer_socialMedia{
+        justify-content: space-around;
+    }
+    .footer_contacts p{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 640px) {
+    header{
+        padding: 20px;
+        margin: 0;
+    }
+    .header_logo{
+        height: 40px;
+        align-items: center;
+    }
+    .header_logo img{
+        height: 60px;
+    }
+    .header_logo p {
+        margin-bottom: 0;
+    }
+    main{
+        margin: 0;
+    }
+    .slide{
+        width: 100vw;
+        height: 250px;
+    }
+    .slide img {
+        width: 100vw;
+        height: 250px;
+    }
+    .slide_text{
+        width: 100vw;
+    }
+    .slide_text__title {
+        font-size: 25px;
+    }
+    .slide_text__invite {
+        font-size: 14px;
+    }
+    .slide_text__consultation {
+        font-size: 13px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .diet img{
+        width: 300px;
+        height: 200px;
+    }
+    .titleDiet{
+        font-size: 16px;
+    }
+    .dietFirst_text__name{
+        font-size: 14px;
+    }
+    .dietFirst_text{
+        width: 320px;
+        font-size: 14px;
+    }
+    .footer img{
+        width: 20px;
+    }
 }

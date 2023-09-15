@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="../../main.js"></script>
+    <link rel="icon" href="../../common/images/logo.svg" type="image/x-icon">
+    <title>CleanLife</title>
+</head>
+<body>
+<header>
+    <div class="header_logo">
+        <a href="../../index.html"><img src="../../common/images/logo.svg"></a>
+        <p>CleanLife</p>
+    </div>
+    <div class = "header_menu">
+        <div class = "header_menu__links">
+            <a href="../../index.html" class="menu_links__link menu_links__firstLink">Главная</a>
+            <a href="../../diet.html" class="menu_links__link" >Диеты</a>
+            <a href="../../meals.html" class="menu_links__link menu_links__currenPage">Рецепты</a>
+            <a href="../../exercise.html" class="menu_links__link">Упражнения</a>
+        </div>
+        <div class = "header_callBack">
+            <a href="#">
+                <button class="header_callBack__button" onclick="openPopup()">Обратная связь</button>
+            </a>
+        </div>
+    </div>
+    <div class="menu-icon">
+        <div class="open" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+<div class="burgerMenu">
+    <div class="links">
+        <div class="close" onclick="closeMenu()">
+            <div class="crossbarLeft"></div>
+            <div class="crossbarRight"></div>
+        </div>
+        <a href="../../index.html">Главная</a>
+        <a href="../../diet.html">Диеты</a>
+        <a href="../../meals.html">Рецепты</a>
+        <a href="../../exercise.html">Упражнения</a>
+        <a href="#" onclick="openPopup()">Обратная связь</a>
+    </div>
+</div>
+<main>
+    <div class="diet">
+        <p class="titleDiet">Тушеные овощи с киноа</p>
+        <div>
+            <div class="dietFirst">
+                <img src="images/meal2.png" alt="">
+                <div class="dietFirst_text">
+                    <p><span class="colorBlue">Тушеные овощи с киноа</span> - это вкусное и питательное блюдо, которое сочетает в себе свежие овощи и белокачественное зерно киноа. Это блюдо богато витаминами, минералами и клетчаткой, что делает его отличным выбором для здорового питания. Вот рецепт тушеных овощей с киноа:
+                        <br><br><span class="colorBlue">Ингредиенты:</span><br>
+                         <br><span class="colorGreen">Для тушеных овощей:</span><br><br>
+                        - 2 ст. ложки оливкового масла<br><br>
+                        - 1 луковица, нарезанная<br><br>
+                        - 2 зубчика чеснока, измельченных<br><br>
+                        - 2 моркови, нарезанные кружками<br><br>
+                        - 2 красных сладких перца, нарезанных полукольцами<br><br>
+                        - 1 цветная капуста, разделенная на цветочки<br><br>
+                        - 1 цукини (кабачок), нарезанный кольцами<br><br>
+                        - 1 чашка киноа, промытая и отцеженная<br><br>
+                        - 2 чашки овощного бульона<br><br>
+                        - Соль и черный перец по вкусу<br><br>
+                        - Свежие зеленья (например, петрушка или базилик) для украшения
+                         <br><br><span class="colorGreen">Приготовление:</span><br>
+                        В глубокой сковороде нагрейте оливковое масло на среднем огне. Добавьте нашинкованный лук и чеснок, обжаривайте их до мягкости и ароматности, около 2-3 минут.
+                        Добавьте к луку и чесноку нарезанные морковь и сладкий перец. Тушите овощи, периодически помешивая, до их мягкости, примерно 5-7 минут.
+                        Добавьте цветную капусту и цукини. Продолжайте тушить овощи, помешивая время от времени, еще около 5 минут.
+                        Добавьте киноа и хорошо перемешайте с овощами.
+                        Постепенно влейте овощной бульон. Доведите до кипения, затем уменьшите огонь, накройте сковороду крышкой и дайте овощам и киноа проготовиться на слабом огне около 15-20 минут, пока киноа не впитает жидкость и не станет мягкой.
+                        При необходимости добавьте соль и черный перец по вкусу.
+                        Перед подачей посыпьте тушеные овощи с киноа свежими зеленьями и подавайте горячим.
+                        Это блюдо можно кастомизировать, добавляя различные овощи по сезону и приправы по вашему вкусу. Оно идеально подходит для веганов и людей, следящих за здоровым питанием, так как оно богато белками, витаминами и минералами.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer_socialMedias">
+            <p>Ищите нас в социальных сетях</p>
+            <div class="footer_socialMedias__footer_socialMedia">
+                <a href=""><img src="../../common/images/vk.png" alt=""></a>
+                <a href=""><img src="../../common/images/telega.png" alt=""></a>
+                <a href=""><img src="../../common/images/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer_contacts">
+            <p>Связь с нами</p>
+            <div class="contacts">
+                <div class="contacts_mail">
+                    <img src="../../common/images/mail.png" alt="">
+                    <p>example@mail.ru</p>
+                </div>
+                <div class="contacts_phone">
+                    <img src="../../common/images/telephone.png" alt="">
+                    <p>+79996677897</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class = "popup">
+    <div class="popupFrame">
+        <p>Консультация</p>
+        <div class="closePopupFrame" onclick="closePopup()">
+            <div class="crossbarLeftPopup"></div>
+            <div class="crossbarRightPopup"></div>
+        </div>
+        <form id="popupForm" class="popupFrame_popupForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="email" placeholder="Телефон" name="email" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="overlay">
+    </div>
+</div>
+</body>
+</html>
