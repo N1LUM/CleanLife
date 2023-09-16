@@ -302,6 +302,15 @@ main{
     border: 1px solid #8EB12E;
     height: 20px;
 }
+.time-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0); /* Полупрозрачный фон */
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
 @media screen and (max-width: 1440px) {
     header{
         margin: 0 50px 0 50px;
