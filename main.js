@@ -53,14 +53,13 @@ function startGame() {
 }
 
 function checkGuess(userGuess) {
-    attempts++;
 
     if (userGuess === secretNumber) {
         showMessage(`Поздравляем! Вы выйграли бесплатный курс от нашего сайта!`);
     } else if (userGuess < secretNumber) {
-        showMessage(`Попробуйте число больше. Попыток: ${attempts}`);
+        showMessage(`Неповезло, число было: ${secretNumber}`);
     } else {
-        showMessage(`Попробуйте число меньше. Попыток: ${attempts}`);
+        showMessage(`Неповезло, число было: ${secretNumber}`);
     }
 }
 
